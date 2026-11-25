@@ -1,0 +1,216 @@
+{
+  "pipeline": {
+    "definition": {
+      "name": "three-node-two-models",
+      "description": "M1 demo: outline on the cheap route, review on the parent route, write on the reasoner route.",
+      "nodes": [
+        {
+          "id": "outline",
+          "label": "Outline",
+          "prompts": [
+            "Write a concise bullet-list outline for a short article about {{input}}. Return only the outline."
+          ],
+          "model": {
+            "provider": "deepseek",
+            "model": "deepseek-chat"
+          }
+        },
+        {
+          "id": "review",
+          "label": "Review",
+          "prompts": [
+            "Review the following outline for factual risks and gaps. Return a short numbered list of revision notes.\n\nOutline:\n{{outline}}"
+          ]
+        },
+        {
+          "id": "write",
+          "label": "Write",
+          "prompts": [
+            "Write the final short article about {{input}} using this outline:\n{{outline}}\n\nApply these review notes:\n{{review}}\n\nReturn only the article text."
+          ],
+          "model": {
+            "provider": "deepseek",
+            "model": "deepseek-reasoner"
+          }
+        }
+      ]
+    },
+    "capabilities": {
+      "agentOptions": true,
+      "outputSchema": true
+    },
+    "run": {
+      "interrupted": false,
+      "events": [
+        {
+          "type": "pipeline-run/run-start",
+          "data": {
+            "runId": "run-demo-1",
+            "name": "three-node-two-models",
+            "nodes": [
+              {
+                "id": "outline",
+                "label": "Outline",
+                "provider": "deepseek",
+                "model": "deepseek-chat"
+              },
+              {
+                "id": "review",
+                "label": "Review"
+              },
+              {
+                "id": "write",
+                "label": "Write",
+                "provider": "deepseek",
+                "model": "deepseek-reasoner"
+              }
+            ],
+            "startedAt": 1000
+          }
+        },
+        {
+          "type": "pipeline-run/agent-start",
+          "data": {
+            "runId": "run-demo-1",
+            "seq": 1,
+            "label": "Outline",
+            "phase": "Outline",
+            "childId": "child-1",
+            "provider": "deepseek",
+            "model": "deepseek-chat",
+            "startedAt": 1100
+          }
+        },
+        {
+          "type": "pipeline-run/agent-end",
+          "data": {
+            "runId": "run-demo-1",
+            "seq": 1,
+            "outcome": "completed",
+            "durationMs": 1200,
+            "usage": {
+              "inputTokens": 120,
+              "outputTokens": 60,
+              "totalTokens": 180
+            }
+          }
+        },
+        {
+          "type": "pipeline-run/agent-start",
+          "data": {
+            "runId": "run-demo-1",
+            "seq": 2,
+            "label": "Review",
+            "phase": "Review",
+            "childId": "child-2",
+            "startedAt": 2400
+          }
+        },
+        {
+          "type": "pipeline-run/agent-end",
+          "data": {
+            "runId": "run-demo-1",
+            "seq": 2,
+            "outcome": "completed",
+            "durationMs": 800,
+            "usage": {
+              "inputTokens": 150,
+              "outputTokens": 80,
+              "totalTokens": 230
+            }
+          }
+        },
+        {
+          "type": "pipeline-run/agent-start",
+          "data": {
+            "runId": "run-demo-1",
+            "seq": 3,
+            "label": "Write",
+            "phase": "Write",
+            "childId": "child-3",
+            "provider": "deepseek",
+            "model": "deepseek-reasoner",
+            "startedAt": 3300
+          }
+        },
+        {
+          "type": "pipeline-run/agent-end",
+          "data": {
+            "runId": "run-demo-1",
+            "seq": 3,
+            "outcome": "completed",
+            "durationMs": 1500,
+            "usage": {
+              "inputTokens": 200,
+              "outputTokens": 300,
+              "totalTokens": 500
+            }
+          }
+        },
+        {
+          "type": "pipeline-run/run-end",
+          "data": {
+            "runId": "run-demo-1",
+            "stopReason": "completed",
+            "durationMs": 4000
+          }
+        }
+      ]
+    }
+  },
+  "claims": [
+    {
+      "claim_id": "definition-valid",
+      "check": "definition",
+      "asserted": "valid"
+    },
+    {
+      "claim_id": "compile-three-nodes",
+      "check": "compile",
+      "asserted": "compiles",
+      "order": [
+        "outline",
+        "review",
+        "write"
+      ],
+      "total_agent_calls": 3,
+      "node": {
+        "session_id": "s-pipe-1",
+        "turn": 2,
+        "tool_call_id": "call-pipe-2"
+      }
+    },
+    {
+      "claim_id": "form-roundtrip",
+      "check": "form",
+      "asserted": "roundtrip"
+    },
+    {
+      "claim_id": "preflight-ok",
+      "check": "preflight",
+      "asserted": "ok"
+    },
+    {
+      "claim_id": "run-completed",
+      "check": "run",
+      "asserted": "completed",
+      "node": {
+        "session_id": "s-pipe-1",
+        "turn": 2,
+        "tool_call_id": "call-pipe-2"
+      }
+    },
+    {
+      "claim_id": "write-completed",
+      "check": "node",
+      "node_id": "write",
+      "asserted": "completed",
+      "attempts": 1,
+      "node": {
+        "session_id": "s-pipe-1",
+        "turn": 2,
+        "tool_call_id": "call-pipe-2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": "sample-2026.11.25",
+  "nodes": [
+    {
+      "session_id": "s-pipe-1",
+      "turn": 2,
+      "tool_call_id": "call-pipe-2",
+      "quote": "session s-pipe-1 · tool call call-pipe-2"
+    }
+  ]
+}

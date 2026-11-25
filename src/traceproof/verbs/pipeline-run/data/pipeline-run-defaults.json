@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "source": "旧仓 src/version.ts / def-types.ts / errors.ts / ir.ts（冻结常量与 M2 feature gates；迁自 target-map ④ 行）",
+  "pipeline_version": "0.2.2",
+  "id_pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$",
+  "template_pattern": "\\{\\{\\s*([A-Za-z0-9_][A-Za-z0-9_-]*)\\s*\\}\\}",
+  "reserved_ids": ["input", "prev"],
+  "run_event_types": [
+    "pipeline-run/run-start",
+    "pipeline-run/agent-start",
+    "pipeline-run/agent-end",
+    "pipeline-run/run-end"
+  ],
+  "node_statuses": ["pending", "running", "completed", "failed", "cancelled", "interrupted"],
+  "stop_reasons": ["completed", "cancelled", "error"],
+  "gated_features": [
+    "options.maxAgentsPerNode",
+    "nodes[].tools",
+    "nodes[].model.reasoningEffort"
+  ],
+  "error_codes": {
+    "schema": "SCHEMA_INVALID",
+    "duplicateId": "IR_DUPLICATE_ID",
+    "reservedId": "IR_RESERVED_ID",
+    "unknownDependency": "IR_UNKNOWN_DEPENDENCY",
+    "selfDependency": "IR_SELF_DEPENDENCY",
+    "selfReference": "IR_SELF_REFERENCE",
+    "dependencyCycle": "IR_DEPENDENCY_CYCLE",
+    "unknownVariable": "IR_UNKNOWN_VARIABLE",
+    "skipReference": "IR_SKIP_REFERENCE",
+    "outputSchema": "IR_OUTPUT_SCHEMA",
+    "unsupportedFeature": "IR_UNSUPPORTED_FEATURE",
+    "skill": "SKILL_MISSING",
+    "capability": "CAPABILITY_MISSING"
+  },
+  "note": "数值与词表只在这里定义一次（旧仓单一来源纪律）；编译器版本号沿用源仓 0.2.2，不随本产品升版。"
+}
