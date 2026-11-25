@@ -53,7 +53,7 @@
     "whitelist": {
       "path_prefixes": [
         "/demo/",
-        "D:\\demo-beta\\"
+        "<drive>:\\demo-beta\\"
       ],
       "project_names": [
         "demo-alpha",

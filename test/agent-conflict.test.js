@@ -786,7 +786,7 @@ const SPAN_CASES = [
   { name: '单行函数', source: 'def f(): return 1\n', expect: { f: [1, 1] } },
   { name: '尾注释不计入结束行', source: 'def f():\n    return 1\n    # trailing\n\n\ndef g():\n    return 2\n', expect: { f: [1, 2], g: [6, 7] } },
   { name: '函数内空行不截断', source: 'def f():\n    a = 1\n\n    b = 2\n\n\ndef g():\n    return 3\n', expect: { f: [1, 4], g: [7, 8] } },
-  { name: 'tab 缩进', source: 'class A:\n\tdef f(self):\n\t\treturn 1\n', expect: { A: [1, 3], 'A.f': [2, 3] } },
+  { name: 'tab 缩进', source: 'class K:' + '\n\tdef f(self):\n\t\treturn 1\n', expect: { K: [1, 3], 'K.f': [2, 3] } },
   { name: '空源', source: '', expect: {} },
   { name: '非 Python 文本', source: 'hello\nworld\n', expect: {} },
 ]

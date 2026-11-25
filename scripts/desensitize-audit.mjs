@@ -103,6 +103,14 @@ function isBenignPathHit(text) {
   return false
 }
 
+/** 保留域名（RFC 2606 / RFC 6761）—— 这些地址按定义**不是**真实收件人。 */
+const RESERVED_EMAIL_DOMAIN_RE = /@(?:[^@\s]*\.)?(?:example\.(?:com|net|org)|example|invalid|test|localhost)$/i
+
+/** 判一条邮箱命中是不是「文档占位」——保留域名一律不报。 */
+function isBenignEmail(text) {
+  return RESERVED_EMAIL_DOMAIN_RE.test(text)
+}
+
 const PATTERNS = [
   { name: 'apiKey', re: /sk-[A-Za-z0-9]{20,}/ },
   { name: 'keyAssign', re: /\b(api[_-]?key|secret|token|password|passwd)\b["']?\s*[:=]\s*["'][^"'\s]{16,}["']/i },
@@ -111,11 +119,24 @@ const PATTERNS = [
   { name: 'personalPath', re: PERSONAL_PATH_RE, benign: isBenignPathHit },
   { name: 'driveAbsPath', re: DRIVE_ABS_PATH_RE, benign: isBenignPathHit },
   { name: 'internalDomain', re: /\b[a-z0-9-]+\.(?:internal|corp|lan)\b/i },
-  { name: 'email', re: /[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}/ },
+  { name: 'email', re: /[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}/, benign: isBenignEmail },
 ]
 
 /** Text-ish extensions scanned always; everything else is sniffed for NUL. */
 const TEXT_EXTENSIONS = new Set(['.ts', '.tsx', '.js', '.mjs', '.cjs', '.json', '.md', '.yml', '.yaml', '.txt', '.html', '.css', '.gitattributes', '', '.npmrc', '.gitignore'])
+
+/**
+ * 2026-11-25：随包 vendored 的**上游测试语料**（公开 DKIM/DMARC/RFC7208 用例集）。
+ *
+ * 这些 `.eml` / `query.json` 里的邮箱、域名是上游用例数据，不是作者本机痕迹；
+ * 而取证器官的判定必须跑在**未经改写**的报文上（改域名会破掉 DKIM 签名校验），
+ * 所以「占位化」这条路在这里不可用。
+ *
+ * 收窄方式：只对 `test/fixtures/<器官>/upstream/**` 跳过 step2 **内容**扫描；
+ * step1（文件名）与 step3（二进制 sha256）照旧生效。范围由
+ * `test/desensitize.test.js` 的 pinning 用例锁死——改宽这条正则会红。
+ */
+const VENDORED_UPSTREAM_RE = /^test[\\/]fixtures[\\/][^\\/]+[\\/]upstream[\\/]/
 
 function isExcluded(rel) {
   return rel.split(/[\\/]/).some((segment) => EXCLUDED_DIRS.has(segment))
@@ -149,6 +170,7 @@ function listFiles() {
 const failures = []
 const tolerated = []
 const pinnedHits = []
+const vendoredSkipped = []
 const files = listFiles()
 
 // ---- Step 1: gitignore coverage + forbidden filenames --------------------
@@ -185,6 +207,10 @@ for (const rel of files) {
     continue
   }
   const text = bytes.toString('utf8')
+  if (VENDORED_UPSTREAM_RE.test(rel)) {
+    vendoredSkipped.push(rel)
+    continue
+  }
   const lines = text.split(/\r?\n/)
   for (const { name, re, benign } of PATTERNS) {
     for (let index = 0; index < lines.length; index += 1) {
@@ -208,6 +234,13 @@ for (const rel of files) {
 // ---- Report ---------------------------------------------------------------
 for (const hit of tolerated) console.log(`  [allowlisted] ${hit.pattern} at ${hit.file}:${hit.line} — ${hit.reason}`)
 for (const hit of pinnedHits) console.log(`  [sha256-pinned] binary ${hit.rel} — ${hit.reason}`)
+if (vendoredSkipped.length > 0) {
+  console.log(`  [vendored] step2 skipped for ${vendoredSkipped.length} upstream fixture file(s) — 公开测试语料，见 VENDORED_UPSTREAM_RE`)
+  // 逐条列出，供 test/desensitize.test.js 的 pinning 用例做「集合相等」断言。
+  if (process.env.DESENSITIZE_AUDIT_VERBOSE === '1') {
+    for (const rel of vendoredSkipped) console.log(`  [vendored-file] ${rel}`)
+  }
+}
 if (failures.length > 0) {
   console.error(`DESENSITIZE_AUDIT_FAILED (${failures.length} finding(s)):`)
   for (const failure of failures) console.error(`  ${failure}`)

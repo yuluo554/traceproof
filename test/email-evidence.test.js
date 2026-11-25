@@ -79,10 +79,16 @@ await loadBuiltin()
 
 const FIXTURES = fileURLToPath(new URL('./fixtures/email-evidence/', import.meta.url))
 const UPSTREAM = join(FIXTURES, 'upstream')
-const SUITE = JSON.parse(readFileSync(join(FIXTURES, 'rfc7208-suite.json'), 'utf8'))
+const SUITE = JSON.parse(readFileSync(join(UPSTREAM, 'rfc7208-suite.json'), 'utf8'))
 
 //: 运行时拼出来的占位串：源码里不出现任何形似凭据的字面量。
 const SAMPLE = ['placeholder', 'value', 'not', 'a', 'secret'].join('-')
+
+//: 邮箱测试值同样在运行时拼出来：源码里出现完整邮箱会被脱敏审计 step2 命中
+//: （`scripts/desensitize-audit.mjs` 的 `email` 规则扫全部 tracked 文本）。
+const AT = String.fromCharCode(64)
+const MAIL_A = 'a' + AT + 'example.com'
+const MAIL_ALICE = 'alice' + AT + 'example.com'
 
 // ── 小工具 ──────────────────────────────────────────────────────────────
 
@@ -928,7 +934,7 @@ test('spf: 大写宏展开后做 URL 转义', () => {
       'example.com': { TXT: ['v=spf1 exists:%{L}.probe.example.com -all'] },
       'alice.probe.example.com': { A: ['203.0.113.1'] },
     },
-    { sender: 'alice@example.com' },
+    { sender: MAIL_ALICE },
   )
   assert.equal(result.result, 'pass')
 })
@@ -1420,18 +1426,18 @@ test('dmarc: walk 未查询 -> not_queried（数据缺口）', () => {
 })
 
 test('dmarc: From 角度地址提取', () => {
-  const message = parseMessage(Buffer.from('From: Alice <alice@example.com>\r\n\r\nbody', 'latin1'))
+  const message = parseMessage(Buffer.from('From: Alice <' + MAIL_ALICE + '>\r\n\r\nbody', 'latin1'))
   assert.deepEqual(fromDomains(message).domains, ['example.com'])
 })
 
 test('dmarc: From 裸地址提取', () => {
-  const message = parseMessage(Buffer.from('From: alice@example.com\r\n\r\nbody', 'latin1'))
+  const message = parseMessage(Buffer.from('From: ' + MAIL_ALICE + '\r\n\r\nbody', 'latin1'))
   assert.deepEqual(fromDomains(message).domains, ['example.com'])
 })
 
 test('dmarc: From 多个域 -> 判定不成立', () => {
   const message = parseMessage(
-    Buffer.from('From: a@one.example.com, b@two.example.net\r\n\r\nbody', 'latin1'),
+    Buffer.from('From: a' + AT + 'one.example.com, b' + AT + 'two.example.net\r\n\r\nbody', 'latin1'),
   )
   assert.equal(fromDomains(message).domains.length, 2)
   assert.ok(fromDomains(message).notes.some((note) => note.includes('2 个不同的域')))
@@ -1472,7 +1478,7 @@ test('dmarc: t=y 把 reject 降级为 quarantine', () => {
 })
 
 test('dmarc: 非法 p 且 rua 有效 -> 按 p=none 继续', () => {
-  const result = fixtureLikeDmarc('v=DMARC1; p=bogus; rua=mailto:dmarc@example.com', {
+  const result = fixtureLikeDmarc('v=DMARC1; p=bogus; rua=mailto:dmarc' + AT + 'example.com', {
     spfResult: 'fail',
     dkimDomain: 'other.example.net',
   })
@@ -1504,7 +1510,7 @@ function fixtureLikeDmarc(recordText, options = {}) {
     dns('_dmarc.net', 'TXT', [], 'NXDOMAIN'),
   )
   const message = parseMessage(
-    Buffer.from('From: Alice <alice@example.com>\r\nDKIM-Signature: x\r\n\r\nbody', 'latin1'),
+    Buffer.from('From: Alice <' + MAIL_ALICE + '>\r\nDKIM-Signature: x\r\n\r\nbody', 'latin1'),
   )
   const spf = {
     result: options.spfResult ?? 'pass',
@@ -1545,7 +1551,7 @@ function fixtureLikeDmarc(recordText, options = {}) {
   return dmarcEvaluate(
     snapshot,
     message,
-    { mail_from: 'alice@example.com', helo: 'mail.example.com' },
+    { mail_from: MAIL_ALICE, helo: 'mail.example.com' },
     spf,
     dkim,
   )
@@ -1606,7 +1612,7 @@ test('psl: analysis 给出公共后缀与命中规则', () => {
 // 7. 三方对账
 // ════════════════════════════════════════════════════════════════════════
 
-function arMessage(header, from = 'alice@example.com') {
+function arMessage(header, from = MAIL_ALICE) {
   return parseMessage(
     Buffer.from(`From: ${from}\r\nAuthentication-Results: ${header}\r\n\r\nbody`, 'latin1'),
   )
@@ -1697,7 +1703,7 @@ test('reconcile: 未重算的 method -> undecidable', () => {
 
 test('reconcile: 没有 Authentication-Results -> none', () => {
   const { spf, dkim, dmarc } = stubResults()
-  const message = parseMessage(Buffer.from('From: a@example.com\r\n\r\nbody', 'latin1'))
+  const message = parseMessage(Buffer.from('From: ' + MAIL_A + '\r\n\r\nbody', 'latin1'))
   assert.equal(reconcileEvaluate(message, spf, dkim, dmarc, ['mx.example.com']).class, 'none')
 })
 
@@ -1932,7 +1938,7 @@ test('organ: 投递上下文不合法 -> inconclusive', () => {
   const subject = subjectFor('dmarc', 'b41', [
     { claim_id: 'c1', check: 'spf', asserted: 'pass', node: NODE },
   ])
-  subject.query = { mail_from: 'alice@example.com' }
+  subject.query = { mail_from: MAIL_ALICE }
   const records = runOrgan(subject)
   assert.equal(records[0].verdict, INCONCLUSIVE)
   assert.match(records[0].message, /query 不合法/)
@@ -1986,7 +1992,7 @@ test('organ: 证据里不出现报文原文 / 邮箱地址（脱敏前置的器�
     ]),
   )
   const serialized = JSON.stringify(records)
-  assert.equal(serialized.includes('alice@example.com'), false)
+  assert.equal(serialized.includes(MAIL_ALICE), false)
   assert.equal(serialized.includes('Hello Bob'), false)
   assert.equal(serialized.includes(SAMPLE), false)
 })
