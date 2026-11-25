@@ -139,7 +139,7 @@ traceproof :: session-replay 0.1.1 :: session-replay.json
 |---|---|---|---|---|
 | 1 | 旧仓**判定层**实跑用例数（§3.0） | 判定层 **12 文件** → `pytest <文件…> -q` → **188 passed**，rc 0（静态 155；全量 355 passed 含脚手架） | 本器官测试 **209 passed**（`node --test test/session-replay.test.js`） | **过**（209 ≥ 188） |
 | 2 | README 示例命令 rc 相同 | 旧仓 `bench` → **rc 0**（样本 10，检出率 10/10，误报 0） | `traceproof check session-replay --input samples/session-replay.json --basis samples/session-replay-traces.json` → **rc 0**（claim 3 / blocking 0） | **过**（同一批基准样本，同为「全通过」） |
-| 3 | 测试文件数 / 函数数 | 判定层 **12** 文件 / **155** `def test_`（实跑 188） | **1** 文件 / **209** 用例 | 用例数**过**（209 ≥ 188，也 ≥ 155）；文件数**不可对齐**（布局规定单文件）→ 未解问题 |
+| 3 | 测试文件数 / 函数数 | 判定层 **12** 文件 / **155** `def test_`（实跑 188） | **口径乙（2026-11-25 用户裁决）**：文件数按域计 → **1 文件**（容器数 ≠ 覆盖数）；函数数按条计 → `test(` 字面量 **78**（顶层 59 + 循环内调用）；用例 **209** | ⚠️ **waiver**：函数数 78 < 155（缺口 77）。用户 2026-11-25 批准；理由：用例数 209 ≥ 188（且 ≥ 155）已过，缺口由 9 个基准样本 truth 矩阵 / 还原记录对账表生成；残余风险：函数级断言粒度变粗。归档 `records/criterion-verdicts-20261125.md` |
 | 4 | `data/` 进包 | 旧仓 `pip wheel`：**26 文件**；随包数值口径在 `resources/scoring.toml`（**4337 B**，1 条 resources） | `npm pack` → **129 文件 / 185581 B**；`lib/traceproof/verbs/session-replay/data/session-replay-defaults.json` **1045 B** | **过（命名替换）**：旧仓的 `resources/` 对应本仓的 `lib/.../data/`；两边都是"随包的唯一数值口径" |
 
 ### 6.1 脚手架测试处置表（§3.0 要求，逐文件）

@@ -8,6 +8,14 @@ DeepSeek Harness (dsh) 桌面端插件：在聊天输入框工具行加一枚「
 
 ![优化提示词按钮与状态条](https://raw.githubusercontent.com/yuluo554/traceproof/main/docs/preview.png)
 
+> **身份（2026-11-25 起，轨AD D）**
+> - 仓库名 / 产品名 / CLI：**`traceproof`**（`bin/traceproof`，`package.json` 的 `bin` 只有这一条）
+> - **发行包名保留旧名 `dsh-prompt-polisher`**：它**已发布 npm**（旧名 HTTP 200，`traceproof` 404），
+>   改名会让已安装用户的升级路径断掉。口径是「**发行名保留旧名，CLI / 仓库名已改**」，不是两套并行。
+> - 旧 dsh 插件**不是 CLI 入口**，所以没有「双入口退役」；`test/entry-surface.test.js` 是**防新增**门
+>   （再往 `bin` 加第二个命令即红）
+> - 安装与升级命令保持不变：`dsh plugin --profile web add dsh-prompt-polisher`
+
 ---
 
 ## traceproof（Stage 1 内核，与 dsh 插件并存）

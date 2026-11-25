@@ -164,7 +164,7 @@ traceproof :: email-evidence 1.0.0 :: email-evidence-dmarc-b41.json
 |---|---|---|---|---|
 | 1 | 旧仓**判定层**实跑用例数（§3.0） | 判定层 **14 文件** → `pytest <文件…> -q` → **466 passed**，rc 0（静态 392；全量 477 passed 含非判定层） | 本器官测试 **504 passed**（`node --test test/email-evidence.test.js`） | **过**（504 ≥ 466） |
 | 2 | README 示例命令 rc 相同 | 旧仓 `audit --snapshot fixtures/dmarc/b41/snap.json --eml … --query …` → **rc 0**（pass 3 / fail 0 / undecidable 0） | `traceproof check email-evidence --input samples/email-evidence-dmarc-b41.json --basis samples/email-evidence-traces.json` → **rc 0**（claim 4 / blocking 0） | **过**（同一份 b41 数据、同为「全通过」） |
-| 3 | 测试文件数 / 函数数 | 判定层 **14** 文件 / **392** `def test_`（实跑 466，参数化展开） | **1** 文件 / **504** 用例 | 用例数**过**（504 ≥ 466，也 ≥ 392）；文件数**不可对齐**（布局规定单文件，见差异 10）→ 记入未解问题 |
+| 3 | 测试文件数 / 函数数 | 判定层 **14** 文件 / **392** `def test_`（实跑 466，参数化展开） | **口径乙（2026-11-25 用户裁决）**：文件数按域计 → **1 文件**（容器数 ≠ 覆盖数）；函数数按条计 → `test(` 字面量 **489**（顶层 486 + 数据表生成）；用例 **504** | **过**（489 ≥ 392；用例 504 ≥ 466） |
 | 4 | `data/` 进包 | 旧仓 `pip wheel`：**30 文件**，`data/` **2 条**（`psl.meta.json` 484 B、`public_suffix_list.dat` 338010 B） | `npm pack` → `dsh-prompt-polisher-0.2.0.tgz`（185581 B，129 文件），`lib/traceproof/verbs/email-evidence/data/` **2 条**：`psl-meta.json` 717 B、`psl-rules.json` 266542 B（`tsc` 复制 JSON 时按 4 空格重排，源文件 183354 B） | **过**（2 条 data 均非空，与旧包 2 条对应） |
 
 ### 6.1 脚手架测试处置表（§3.0 要求，逐文件）

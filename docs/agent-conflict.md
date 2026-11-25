@@ -127,7 +127,7 @@ traceproof :: agent-conflict 0.0.4 :: agent-conflict.json
 |---|---|---|---|---|
 | 1 | 旧仓**判定层**实跑用例数（§3.0） | 判定层 **12 文件** → `pytest <文件…> -q` → **264 passed / 1 skipped**，rc 0（静态 228；全量 398 passed / 1 skipped 含脚手架） | 本器官测试 **428 passed**（`node --test test/agent-conflict.test.js`） | **过**（428 ≥ 264） |
 | 2 | README 示例命令 rc 相同 | 旧仓 `bench` → **rc 0**（15 场景 / 174 检查全过） | `traceproof check agent-conflict --input samples/agent-conflict.json --basis samples/agent-conflict-traces.json` → **rc 0**（claim 3 / blocking 0） | **过**（同一个基准场景，同为「全通过」） |
-| 3 | 测试文件数 / 函数数 | 判定层 **12** 文件 / **228** `def test_`（实跑 264） | **1** 文件 / **428** 用例 | 用例数**过**（428 ≥ 264，也 ≥ 228）；文件数**不可对齐**（布局规定单文件）→ 未解问题 |
+| 3 | 测试文件数 / 函数数 | 判定层 **12** 文件 / **228** `def test_`（实跑 264） | **口径乙（2026-11-25 用户裁决）**：文件数按域计 → **1 文件**（容器数 ≠ 覆盖数）；函数数按条计 → `test(` 字面量 **109**（顶层 92 + 循环内调用）；用例 **428** | ⚠️ **waiver**：函数数 109 < 228（缺口 119）。用户 2026-11-25 批准；理由：用例数 428 ≥ 264（且 ≥ 228）已过，缺口由 7 个场景矩阵 / 主张 × 判据全交叉生成；残余风险：函数级断言粒度变粗。归档 `records/criterion-verdicts-20261125.md` |
 | 4 | `data/` 进包 | 旧仓 `pip wheel`：**25 文件、无 `data/` 目录** | `npm pack` → **129 文件 / 185581 B**；`lib/traceproof/verbs/agent-conflict/data/agent-conflict-defaults.json` **504 B** | 旧仓**没有** `data/` 可对账（判据不适用）；本仓新增的单一数值来源**已进发布件** |
 
 ### 6.1 脚手架测试处置表（§3.0 要求，逐文件）
