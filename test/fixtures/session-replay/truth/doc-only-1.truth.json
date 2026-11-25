@@ -1,0 +1,54 @@
+{
+  "episode_type": "doc_only",
+  "expect": {
+    "event_count": 5,
+    "exit_codes": [],
+    "files_touched": [
+      "/demo/alpha/docs/notes.md"
+    ],
+    "kind_counts": {
+      "tool_call": 2,
+      "tool_result": 2,
+      "user_msg": 1
+    },
+    "source": "claude",
+    "tools_used": [
+      "Bash",
+      "Edit"
+    ],
+    "user_report_fragments": [
+      "demo-user, bug: the README instructions are outdated in /demo/alpha/src/calc.py"
+    ]
+  },
+  "expect_episode_statuses": [],
+  "expect_episodes": 0,
+  "expect_filter_reasons": [
+    "docs_only"
+  ],
+  "expect_generated": {
+    "anchor_fragments": [],
+    "assumed_convention": false,
+    "candidate_count": 0,
+    "generated_count": 0,
+    "reasons": [],
+    "sections": [],
+    "statuses": [],
+    "symbols": [],
+    "written_count": 0
+  },
+  "expect_reconstructions": [
+    {
+      "after": "run it with --demo\n",
+      "before": "run it\n",
+      "confidence": "high",
+      "file": "/demo/alpha/docs/notes.md",
+      "hunk_count": 1,
+      "source": "claude_old_string",
+      "status": "ok"
+    }
+  ],
+  "expect_red_green": [],
+  "input_file": "claude/doc-only-1.jsonl",
+  "sample": "doc-only-1",
+  "session_id": "sess-demo-0005"
+}

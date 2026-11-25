@@ -21,7 +21,19 @@ DeepSeek Harness (dsh) 桌面端插件：在聊天输入框工具行加一枚「
 
 ```console
 $ traceproof list
-（未注册任何器官）
+agent-conflict               0.0.4      多 agent 并行冲突取证：文件 / 区块 / 符号三级判据，逐条核对主张
+email-evidence               1.0.0      邮件认证取证：同一份 DNS 快照上重算 SPF/DKIM/DMARC，并逐条核对主张
+session-replay               0.1.1      会话回归取证：切 bug-fix episode、还原修复 diff，并逐条核对主张
+
+$ traceproof check email-evidence --input samples/email-evidence-dmarc-b41.json \
+                                  --basis samples/email-evidence-traces.json
+traceproof :: email-evidence 1.0.0 :: email-evidence-dmarc-b41.json
+[claim] dkim-pass — 主张「dkim=pass」被同一份快照上的重算支持 :: s-mail-1#2#call-dkim-2
+[claim] dmarc-pass — 主张「dmarc=pass」被同一份快照上的重算支持 :: s-mail-1#3#call-dmarc-3
+[claim] reconcile-consistent — 主张「reconcile=consistent」被同一份快照上的重算支持 :: s-mail-1#4#call-ar-4
+[claim] spf-pass — 主张「spf=pass」被同一份快照上的重算支持 :: s-mail-1#1#call-spf-1
+合计 4 条，阻断 0 条（claim=4 refuted=0 inconclusive=0）
+# 退出码 0
 ```
 
 契约（唯一入口 / 取证账本 / 脱敏前置 / 退出码）见 [`docs/traceproof.md`](docs/traceproof.md)。
@@ -29,9 +41,11 @@ $ traceproof list
 （`claim` / `refuted` / `inconclusive`），`basis_ref` = 痕迹节点
 （`session_id` + `turn` + `tool_call_id`），退出码 `0/1/2/3`。
 
-| 器官（verb） | 来源仓 | 状态 |
+| 器官（verb） | 溯源 | 状态 |
 |---|---|---|
-| — | — | Stage 1 尚无器官迁入 |
+| `agent-conflict` | 迁自 target-map ④ 行 | 已迁入 `v0.0.4`；判据见 [`docs/agent-conflict.md`](docs/agent-conflict.md) |
+| `email-evidence` | 迁自 target-map ④ 行 | 已迁入 `v1.0.0`；输入/规则/输出与 §7.3 四项判据见 [`docs/email-evidence.md`](docs/email-evidence.md) |
+| `session-replay` | 迁自 target-map ④ 行 | 已迁入 `v0.1.1`；判据见 [`docs/session-replay.md`](docs/session-replay.md) |
 
 ## 特性
 
@@ -84,10 +98,11 @@ pnpm test   # 构建 + 全量离线测试（node --test，模型 API 永不进 C
 ## 目录
 
 ```
-src/        host 半（管线、双通路分派、config schema、RPC 路由）
+src/        host 半（管线、双通路分派、config schema、RPC 路由）+ `traceproof/` 内核与器官
 client/     web 半（按钮、状态条、风格菜单、设置面板；构建为单 bundle）
 scripts/    构建 / 播种 / golden 重生成 / 脱敏审计
 data/       基准 fixtures 与 golden 快照（字节冻结，台账见 data/README.md）
+samples/    traceproof 的可跑示例（subject + 痕迹包）
 lib/        构建产物（gitignored；npm 包随 lib 发布，安装零构建）
 ```
 

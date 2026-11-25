@@ -1,0 +1,100 @@
+{
+  "episode_type": "multi_bug",
+  "expect": {
+    "event_count": 12,
+    "exit_codes": [],
+    "files_touched": [
+      "/demo/alpha/src/calc.py",
+      "/demo/beta/pkg/format.py"
+    ],
+    "kind_counts": {
+      "tool_call": 5,
+      "tool_result": 5,
+      "user_msg": 2
+    },
+    "source": "claude",
+    "tools_used": [
+      "Bash",
+      "Edit"
+    ],
+    "user_report_fragments": [
+      "demo-user, bug: divide() returns wrong value in /demo/alpha/src/calc.py",
+      "demo-user, bug: slugify() keeps uppercase letters in /demo/alpha/src/calc.py"
+    ]
+  },
+  "expect_episode_statuses": [
+    "ended_without_pass",
+    "verified_by_run"
+  ],
+  "expect_episodes": 2,
+  "expect_filter_reasons": [],
+  "expect_generated": {
+    "anchor_fragments": [
+      "sess-demo-0003#4",
+      "sess-demo-0003#9",
+      "/demo/alpha/src/calc.py",
+      "/demo/beta/pkg/format.py",
+      "uppercase letters"
+    ],
+    "assumed_convention": true,
+    "candidate_count": 1,
+    "generated_count": 1,
+    "reasons": [
+      "",
+      "assert_not_derivable"
+    ],
+    "sections": [
+      "act",
+      "arrange",
+      "assert"
+    ],
+    "statuses": [
+      "generated",
+      "needs_manual"
+    ],
+    "symbols": [
+      "divide",
+      "slugify"
+    ],
+    "written_count": 2
+  },
+  "expect_reconstructions": [
+    {
+      "after": "def divide(a, b):\n    return a / b if b else 0\n",
+      "before": "def divide(a, b):\n    return a / b\n",
+      "confidence": "high",
+      "file": "/demo/alpha/src/calc.py",
+      "hunk_count": 1,
+      "source": "claude_old_string",
+      "status": "ok"
+    },
+    {
+      "after": "def slugify(name):\n    return name.lower()\n",
+      "before": "def slugify(name):\n    return name\n",
+      "confidence": "high",
+      "file": "/demo/beta/pkg/format.py",
+      "hunk_count": 1,
+      "source": "claude_old_string",
+      "status": "ok"
+    }
+  ],
+  "expect_red_green": [
+    {
+      "episode_id": "sess-demo-0003#4",
+      "green_exit": 0,
+      "reason": "",
+      "red_exit": 1,
+      "status": "verified"
+    },
+    {
+      "episode_id": "sess-demo-0003#9",
+      "green_exit": 1,
+      "reason": "red_not_failed",
+      "red_exit": 0,
+      "status": "unverified"
+    }
+  ],
+  "input_file": "claude/multi-bug-1.jsonl",
+  "sample": "multi-bug-1",
+  "session_id": "sess-demo-0003"
+}

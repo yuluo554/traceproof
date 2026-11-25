@@ -1,0 +1,224 @@
+{
+  "bench_version": 3,
+  "checked_facts": [
+    "source",
+    "format_version",
+    "event_count",
+    "kind_counts",
+    "tools_used",
+    "files_touched",
+    "exit_codes",
+    "user_report_fragments",
+    "filter_reasons",
+    "episode_statuses",
+    "episode_count",
+    "reconstructions",
+    "generated",
+    "red_green"
+  ],
+  "coverage": {
+    "min_count_by_type": {
+      "ambiguous_old_string": 1,
+      "base_drift": 1,
+      "doc_only": 1,
+      "ended_without_pass": 1,
+      "happy_path": 1,
+      "multi_bug": 1,
+      "new_file_write": 1,
+      "no_failure_signal": 1,
+      "structured_patch": 1,
+      "unsupported_format": 1
+    },
+    "observed_count_by_type": {
+      "ambiguous_old_string": 1,
+      "base_drift": 1,
+      "doc_only": 1,
+      "ended_without_pass": 1,
+      "happy_path": 1,
+      "multi_bug": 1,
+      "new_file_write": 1,
+      "no_failure_signal": 1,
+      "structured_patch": 1,
+      "unsupported_format": 1
+    }
+  },
+  "generator": "tools/gen_bench.py",
+  "harnesses": [
+    "claude",
+    "codex"
+  ],
+  "pending_facts": {},
+  "privacy": {
+    "note": "全部为假值；假绝对路径只保留通用盘符形态，后缀段为假项目名",
+    "whitelist": {
+      "path_prefixes": [
+        "/demo/",
+        "D:\\demo-beta\\"
+      ],
+      "project_names": [
+        "demo-alpha",
+        "demo-beta"
+      ],
+      "session_ids": [
+        "sess-demo-"
+      ],
+      "user": "demo-user"
+    }
+  },
+  "repo_fixtures": [
+    {
+      "file": "repo/happy-path-1/demo/alpha/src/calc.py",
+      "sample": "happy-path-1",
+      "sha256": "4f719d2b104c917e0ce623395e00e0c44dbf1940414d87fc2b66ede6e3d67b12"
+    },
+    {
+      "file": "repo/happy-path-1/demo/beta/pkg/format.py",
+      "sample": "happy-path-1",
+      "sha256": "6b6b84e5fd8961f429f9d2cdbf7658cf33c25b4ff6c09c246c32e6c8b233419f"
+    },
+    {
+      "file": "repo/ended-without-pass-1/demo/alpha/src/calc.py",
+      "sample": "ended-without-pass-1",
+      "sha256": "c9f28bea98a2738fd61db45b1a927b35357a4a9a22303e1343450814dea7c632"
+    },
+    {
+      "file": "repo/multi-bug-1/demo/alpha/src/calc.py",
+      "sample": "multi-bug-1",
+      "sha256": "4f719d2b104c917e0ce623395e00e0c44dbf1940414d87fc2b66ede6e3d67b12"
+    },
+    {
+      "file": "repo/multi-bug-1/demo/beta/pkg/format.py",
+      "sample": "multi-bug-1",
+      "sha256": "2efe79021363ddc041060572a4bd7875205724c728d168a80879590cfc8b6274"
+    },
+    {
+      "file": "repo/structured-patch-1/demo/alpha/src/calc.py",
+      "sample": "structured-patch-1",
+      "sha256": "4f719d2b104c917e0ce623395e00e0c44dbf1940414d87fc2b66ede6e3d67b12"
+    },
+    {
+      "file": "repo/base-drift-1/demo/alpha/src/calc.py",
+      "sample": "base-drift-1",
+      "sha256": "ad998671b9ce29bae9cafb6681bd2a45efe912cf33fcb053aa89890d0d785c2c"
+    }
+  ],
+  "rng_draws": 5,
+  "samples": [
+    {
+      "bytes": 3129,
+      "episode_type": "happy_path",
+      "file": "codex/happy-path-1.jsonl",
+      "harness": "codex",
+      "repo": "repo/happy-path-1",
+      "sample": "happy-path-1",
+      "sha256": "fb340347e5e7f9c08dae03d679ec9b754e437a889c30b9219124f9b28a7934cb",
+      "truth": "truth/happy-path-1.truth.json",
+      "truth_sha256": "0d32787784c8c40c3cc3874c6352d001fab3e75086881b8f2c8b382cda2dc02e"
+    },
+    {
+      "bytes": 2320,
+      "episode_type": "ended_without_pass",
+      "file": "codex/ended-without-pass-1.jsonl",
+      "harness": "codex",
+      "repo": "repo/ended-without-pass-1",
+      "sample": "ended-without-pass-1",
+      "sha256": "6009ddedf3374eca0d6ed2f175798ebf6762e0b3f959dea6f1757e853d4db062",
+      "truth": "truth/ended-without-pass-1.truth.json",
+      "truth_sha256": "c25e9d5d815fa88150bf462cc682fa9e435d5b5cc5d446079c371678a0bd44ae"
+    },
+    {
+      "bytes": 6164,
+      "episode_type": "multi_bug",
+      "file": "claude/multi-bug-1.jsonl",
+      "harness": "claude",
+      "repo": "repo/multi-bug-1",
+      "sample": "multi-bug-1",
+      "sha256": "89f0d1e74d72ce39df5a61210cc41266cbe81782d333380c06617c95b54b80c9",
+      "truth": "truth/multi-bug-1.truth.json",
+      "truth_sha256": "7f45638de37c948ee19b49ff972c79856187622787237e4b26b043f944596c4e"
+    },
+    {
+      "bytes": 1720,
+      "episode_type": "no_failure_signal",
+      "file": "claude/no-failure-signal-1.jsonl",
+      "harness": "claude",
+      "repo": "",
+      "sample": "no-failure-signal-1",
+      "sha256": "657fdeba912fbb80070c4779d599ecfbc54729af144a8a4070eae9cd3b2f0298",
+      "truth": "truth/no-failure-signal-1.truth.json",
+      "truth_sha256": "a857e5a034aa803386bdea54b5813e319afbcf369d523ff849708ccb88acc1f1"
+    },
+    {
+      "bytes": 2576,
+      "episode_type": "doc_only",
+      "file": "claude/doc-only-1.jsonl",
+      "harness": "claude",
+      "repo": "",
+      "sample": "doc-only-1",
+      "sha256": "9691be1e64dd29ec54a154dfea012717b0926ce465d0852c27e728c92a31cb11",
+      "truth": "truth/doc-only-1.truth.json",
+      "truth_sha256": "d471427f9533ac6cefa485c5d0698e173171623eecb895aa2c6e09985cf35156"
+    },
+    {
+      "bytes": 2641,
+      "episode_type": "ambiguous_old_string",
+      "file": "claude/ambiguous-old-string-1.jsonl",
+      "harness": "claude",
+      "repo": "",
+      "sample": "ambiguous-old-string-1",
+      "sha256": "e32807e614e17f8f7cf605bac18fdd9f2d85fc4f5960db810eb88819e41c2536",
+      "truth": "truth/ambiguous-old-string-1.truth.json",
+      "truth_sha256": "dd07b12e822385d12f0351f97e5054b0c7437073d1c022f78a4c8b6ea2219bf7"
+    },
+    {
+      "bytes": 2559,
+      "episode_type": "new_file_write",
+      "file": "claude/new-file-write-1.jsonl",
+      "harness": "claude",
+      "repo": "",
+      "sample": "new-file-write-1",
+      "sha256": "c07ba05f3d9bfd3490803d3e026ab6bd1ffb5375da7d0bcc950fb453359205e4",
+      "truth": "truth/new-file-write-1.truth.json",
+      "truth_sha256": "f23a029b83b6050f114da0c446280bef6d07f18b0c4d19d91fa4c3ccb3290fde"
+    },
+    {
+      "bytes": 146,
+      "episode_type": "unsupported_format",
+      "file": "invalid/unsupported-format-1.jsonl",
+      "harness": "claude",
+      "repo": "",
+      "sample": "unsupported-format-1",
+      "sha256": "dd1c08957d9c6a17ab74c7f4608988d7998c99be78fb78a251ff2bdd4579396a",
+      "truth": "truth/unsupported-format-1.truth.json",
+      "truth_sha256": "ca4ee2a0360608ca6c4fb1f3dea7fc0e4d57efc011c3d258abe1b27996f44fa5"
+    },
+    {
+      "bytes": 3704,
+      "episode_type": "structured_patch",
+      "file": "claude/structured-patch-1.jsonl",
+      "harness": "claude",
+      "repo": "repo/structured-patch-1",
+      "sample": "structured-patch-1",
+      "sha256": "75298d2eabf102589d85b6eea4c080cd5b408425ba5f2d62ee35c5f84b4e94ea",
+      "truth": "truth/structured-patch-1.truth.json",
+      "truth_sha256": "4ff3d932c30dfe9b3433e6482afee9b834b161d2c5b294872ea6827bd24a7883"
+    },
+    {
+      "bytes": 2095,
+      "episode_type": "base_drift",
+      "file": "codex/base-drift-1.jsonl",
+      "harness": "codex",
+      "repo": "repo/base-drift-1",
+      "sample": "base-drift-1",
+      "sha256": "7f4035be16870030f69117811318e5ad7664e93d8ff729266a3e660226707538",
+      "truth": "truth/base-drift-1.truth.json",
+      "truth_sha256": "fc98a5584c3fc5ad6ab0ff392e450bac7fc11a774aa1ebfe4bcc954c370ff2df"
+    }
+  ],
+  "seed": 20261017,
+  "thresholds": {
+    "max_false_positive": 0,
+    "min_detection_rate": 1.0,
+    "min_samples": 10
+  }
+}

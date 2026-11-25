@@ -1,0 +1,11 @@
+{
+  "version": "sample-2026.11.25",
+  "nodes": [
+    {
+      "session_id": "s-s2r-1",
+      "turn": 2,
+      "tool_call_id": "call-s2r-2",
+      "quote": "session s-s2r-1 · tool call call-s2r-2"
+    }
+  ]
+}

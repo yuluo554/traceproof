@@ -1,0 +1,114 @@
+{
+  "snapshot": {
+    "fetched_at": "2026-10-19T18:35:00Z",
+    "psl_date": "2026-10-20",
+    "psl_version": "2026-10-20_08-40-56_UTC",
+    "queries": [
+      {
+        "answer": [
+          "v=DMARC1; p=reject; rua=mailto:dmarc@example.com"
+        ],
+        "qname": "_dmarc.example.com",
+        "qtype": "TXT",
+        "rcode": "NOERROR",
+        "ttl": 300
+      },
+      {
+        "answer": [
+          "v=DMARC1; p=quarantine; rua=mailto:dmarc@example.com"
+        ],
+        "qname": "_dmarc.signing.example.com",
+        "qtype": "TXT",
+        "rcode": "NOERROR",
+        "ttl": 300
+      },
+      {
+        "answer": [],
+        "qname": "_dmarc.com",
+        "qtype": "TXT",
+        "rcode": "NXDOMAIN",
+        "ttl": 300
+      },
+      {
+        "answer": [
+          "v=spf1 ip4:192.0.2.0/24 -all"
+        ],
+        "qname": "example.com",
+        "qtype": "TXT",
+        "rcode": "NOERROR",
+        "ttl": 300
+      },
+      {
+        "answer": [
+          "192.0.2.10"
+        ],
+        "qname": "example.com",
+        "qtype": "A",
+        "rcode": "NOERROR",
+        "ttl": 300
+      },
+      {
+        "answer": [
+          "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtlnGVHmaUMrAxi1MBxSzlargS6j0csjMH6OYGeRvxXHalWixI5PTP7D9SqoiSSZR/zsedLiNymPO9OSkvjsdkq881tFdh6qVhQU0rQERAF8jHuJnIU+GP/cgzSK9RRJbRlqbNMx6yBQ0j4/klZe0Ui7QUaul+la0iI+bjyJ2UXVrKspgcYPNZeHt4MCOJ2XyBqCA3CE9k6knEsnepY+jmHCI5JCOFT/3h0fO6rF4eX26uYtSAuDUq+y953wP/lWyxnvzFIY+gvV5j7Kirb+EZuH2wymOQour+1yWmuWB49xIty+2skbTZgsecM9VieOhOPfivds+EdwG1qosVa7yTwIDAQAB"
+        ],
+        "qname": "sel._domainkey.signing.example.com",
+        "qtype": "TXT",
+        "rcode": "NOERROR",
+        "ttl": 300
+      }
+    ],
+    "resolver": "synthetic",
+    "schema_version": 1
+  },
+  "query": {
+    "client_ip": "192.0.2.10",
+    "helo": "mail.example.com",
+    "mail_from": "alice@example.com",
+    "trusted_authserv_ids": [
+      "mx.example.com"
+    ]
+  },
+  "message_b64": "QXV0aGVudGljYXRpb24tUmVzdWx0czogbXguZXhhbXBsZS5jb207IHNwZj1wYXNzOyBka2ltPXBhc3M7IGRtYXJjPXBhc3MNCkZyb206IDxhbGljZUBleGFtcGxlLmNvbT4NCkRLSU0tU2lnbmF0dXJlOnY9MTsgYT1yc2Etc2hhMjU2OyBjPXJlbGF4ZWQvcmVsYXhlZDsgZD1zaWduaW5nLmV4YW1wbGUuY29tOyBzPXNlbDsgaT1Ac2lnbmluZy5leGFtcGxlLmNvbTsgdD0xNzY3MjI1NjAwOw0KCWg9ZnJvbTp0bzpzdWJqZWN0OmRhdGU7IGJoPTRCd0NZK0x5cGsvayt3VDFrMm40TnJVaFdaOUZwWlhwc3pBTi82VlYyOU09OyBiPXN0ZnVyQXVEclZ4TEc0R1ZUeDArQnVlODJoZmZuVkgyY3o4b2tFN2JRR0I0MnY5NXVmclJZRVpNejh5Wmt4algNCgl0dlZzdEdoNWswbi9GMzNsd0UzdnlCUGdZUDE2NUx4K3lzcHFVNHk3UnRXWXIrZWpjWVhXdzZOS0xidmNUNkJODQoJcU16VkdlY1VOSmVaMW94MjFkSE9ibzU5NysydFJaUVR1S2hyUG9CdWVxdlFiMVNacm9qMHRxazd0ZS9GVzdKaA0KCTVpWHgxSG1UVTh3aWNwMHlMQ3NRVzZwaC9JM1hsaUlkcjNpZGgrYkVmb2duK21sYjNnaXJPVVRpbWtObVFGQ1cNCglaY0JJbUZmRTkzTk1HbE1ZSE9tR2ZydlBjYWExKyttUWtPUldrWk1VNW9GM2VlOWp2b3V2Um1CbzczdE1iZFJFDQoJaW0zU3BLK1RNWVoxaTJNaEZPNDAwZz09DQpUbzogPGJvYkBleGFtcGxlLm5ldD4NClN1YmplY3Q6IGRtYXJjIHRyZWUgd2FsayBmaXh0dXJlDQpEYXRlOiBUaHUsIDEgSmFuIDIwMjYgMDA6MDA6MDAgKzAwMDANCk1lc3NhZ2UtSUQ6IDxkbWFyYy1maXh0dXJlQGV4YW1wbGUuY29tPg0KDQpIZWxsbyBCb2IsDQoNCkRNQVJDIHRyZWUgd2FsayBmaXh0dXJlIGJvZHkuDQo=",
+  "claims": [
+    {
+      "claim_id": "spf-pass",
+      "check": "spf",
+      "asserted": "pass",
+      "node": {
+        "session_id": "s-mail-1",
+        "turn": 1,
+        "tool_call_id": "call-spf-1"
+      }
+    },
+    {
+      "claim_id": "dkim-pass",
+      "check": "dkim",
+      "asserted": "pass",
+      "node": {
+        "session_id": "s-mail-1",
+        "turn": 2,
+        "tool_call_id": "call-dkim-2"
+      }
+    },
+    {
+      "claim_id": "dmarc-pass",
+      "check": "dmarc",
+      "asserted": "pass",
+      "node": {
+        "session_id": "s-mail-1",
+        "turn": 3,
+        "tool_call_id": "call-dmarc-3"
+      }
+    },
+    {
+      "claim_id": "reconcile-consistent",
+      "check": "reconcile",
+      "asserted": "consistent",
+      "node": {
+        "session_id": "s-mail-1",
+        "turn": 4,
+        "tool_call_id": "call-ar-4"
+      }
+    }
+  ]
+}

@@ -76,18 +76,27 @@ docs/<slug>.md                         # 输入 / 规则 / 输出示例
 | 依据模块叫 `core/trace-index.ts`（其余三产品叫 `basis`） | 本产品的依据是**痕迹索引**而非条文库；导出符号仍是 `Basis` / `NodeMissing` / `ref()`，契约面一致 |
 | 账本类型叫 `LedgerRecord` | TypeScript 里 `Record` 是内置工具类型，直接占用会污染类型面 |
 
-## 8. 示例（Stage 1，器官尚未迁入）
+## 8. 示例（已迁入 `agent-conflict` / `email-evidence` / `session-replay`）
 
 ```console
 $ traceproof list
-（未注册任何器官）
+agent-conflict               0.0.4      多 agent 并行冲突取证：文件 / 区块 / 符号三级判据，逐条核对主张
+email-evidence               1.0.0      邮件认证取证：同一份 DNS 快照上重算 SPF/DKIM/DMARC，并逐条核对主张
+session-replay               0.1.1      会话回归取证：切 bug-fix episode、还原修复 diff，并逐条核对主张
 
-$ traceproof check no-such --input samples/anything.json
+$ traceproof check email-evidence --input samples/email-evidence-dmarc-b41.json \
+                                  --basis samples/email-evidence-traces.json
+traceproof :: email-evidence 1.0.0 :: email-evidence-dmarc-b41.json
+[claim] spf-pass — 主张「spf=pass」被同一份快照上的重算支持 :: s-mail-1#1#call-spf-1
+…
+合计 4 条，阻断 0 条（claim=4 refuted=0 inconclusive=0）        # 退出码 0
+
+$ traceproof check no-such --input samples/email-evidence-dmarc-b41.json
 VerbMissing: 未注册的器官：no-such          # 退出码 3
 ```
 
-器官迁入后，本页与 README 的「器官表」按 `_workspace/target-map-20261125.tsv`
-的 ④traceproof 行逐个补齐（每个器官一页 `docs/<slug>.md`）。
+器官逐个迁入时，本页的「器官表」按 `_workspace/target-map-20261125.tsv` 的 ④traceproof
+行补齐（每个器官一页 `docs/<slug>.md`）。
 
 ## 9. 防回退
 

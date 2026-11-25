@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "source": "旧仓 config/radar.toml（[symbol] / [severity]；迁自 target-map ④ 行）",
+  "levels_order": ["file", "block", "symbol"],
+  "symbol": {
+    "adjacent_tolerance": 3,
+    "min_overlap_lines": 2
+  },
+  "severity": {
+    "same_symbol": 50,
+    "same_file_diff_symbol": 30,
+    "adjacent_lines": 20,
+    "file_only": 10
+  },
+  "note": "数值只在这里定义一次（旧仓 K3：不得在代码里内联第二份）。"
+}

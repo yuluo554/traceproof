@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "source": "旧仓 config/scoring.toml（scoring / episode / vocabulary；迁自 target-map ④ 行）",
+  "scoring": {
+    "weights": {
+      "failure_signal": 2,
+      "reconstruction": 3,
+      "test_command": 2,
+      "code_change": 2
+    },
+    "min_score": 5
+  },
+  "episode": {
+    "id_format": "{session_id}#{first_fix_seq}",
+    "max_result_chars": 4000,
+    "doc_suffixes": [".md", ".markdown", ".rst", ".txt", ".adoc"]
+  },
+  "vocabulary": {
+    "bug_terms": ["bug", "报错", "错误", "失败", "崩溃", "不工作", "复现", "异常", "broken", "doesn't work", "fail"],
+    "failure_signals": ["FAILED", "AssertionError", "Traceback", "Exit code"],
+    "test_command_markers": ["pytest", "unittest", "npm test", "go test", "cargo test", "make test"],
+    "test_pass_markers": ["passed", "PASSED", "ok", "0 failed"]
+  },
+  "note": "语义词表与权重只在这里定义一次（旧仓 K13/K20：源码零词面）。"
+}

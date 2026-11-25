@@ -1,0 +1,81 @@
+{
+  "episode_type": "happy_path",
+  "expect": {
+    "event_count": 9,
+    "exit_codes": [
+      1,
+      0,
+      0
+    ],
+    "files_touched": [
+      "/demo/beta/pkg/format.py"
+    ],
+    "kind_counts": {
+      "meta": 1,
+      "tool_call": 3,
+      "tool_result": 4,
+      "user_msg": 1
+    },
+    "source": "codex",
+    "tools_used": [
+      "shell_command",
+      "apply_patch"
+    ],
+    "user_report_fragments": [
+      "demo-user, bug: format_amount() drops the sign in /demo/alpha/src/calc.py"
+    ]
+  },
+  "expect_episode_statuses": [
+    "verified_by_run"
+  ],
+  "expect_episodes": 1,
+  "expect_filter_reasons": [],
+  "expect_generated": {
+    "anchor_fragments": [
+      "sess-demo-0001",
+      "/demo/beta/pkg/format.py",
+      "drops the sign"
+    ],
+    "assumed_convention": true,
+    "candidate_count": 0,
+    "generated_count": 0,
+    "reasons": [
+      "assert_not_derivable"
+    ],
+    "sections": [
+      "act",
+      "arrange",
+      "assert"
+    ],
+    "statuses": [
+      "needs_manual"
+    ],
+    "symbols": [
+      "format_amount"
+    ],
+    "written_count": 1
+  },
+  "expect_reconstructions": [
+    {
+      "after": "def format_amount(value):\n    return abs(value)\n",
+      "before": "def format_amount(value):\n    return value\n",
+      "confidence": "medium",
+      "file": "/demo/beta/pkg/format.py",
+      "hunk_count": 1,
+      "source": "codex_unified_diff",
+      "status": "ok"
+    }
+  ],
+  "expect_red_green": [
+    {
+      "episode_id": "sess-demo-0001#5",
+      "green_exit": 1,
+      "reason": "red_not_failed",
+      "red_exit": 0,
+      "status": "unverified"
+    }
+  ],
+  "input_file": "codex/happy-path-1.jsonl",
+  "sample": "happy-path-1",
+  "session_id": "sess-demo-0001"
+}

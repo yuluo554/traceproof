@@ -1,0 +1,29 @@
+{
+  "version": "sample-2026.11.25",
+  "nodes": [
+    {
+      "session_id": "s-mail-1",
+      "turn": 1,
+      "tool_call_id": "call-spf-1",
+      "quote": "session s-mail-1 · tool call call-spf-1"
+    },
+    {
+      "session_id": "s-mail-1",
+      "turn": 2,
+      "tool_call_id": "call-dkim-2",
+      "quote": "session s-mail-1 · tool call call-dkim-2"
+    },
+    {
+      "session_id": "s-mail-1",
+      "turn": 3,
+      "tool_call_id": "call-dmarc-3",
+      "quote": "session s-mail-1 · tool call call-dmarc-3"
+    },
+    {
+      "session_id": "s-mail-1",
+      "turn": 4,
+      "tool_call_id": "call-ar-4",
+      "quote": "session s-mail-1 · tool call call-ar-4"
+    }
+  ]
+}
