@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+/**
+ * traceproof 的**唯一**可执行入口（SKELETON-SPEC §2）。
+ *
+ * 器官不得自带 `bin`：新增能力一律注册成 verb，由这个入口转发。
+ * 构建产物在 `lib/`（`pnpm run build` -> `tsc`），本文件只做进程边界的事。
+ */
+import { main } from '../lib/traceproof/cli.js'
+
+const code = await main(process.argv.slice(2))
+process.exit(code)

@@ -14,11 +14,15 @@
     "./package.json": "./package.json"
   },
   "files": [
+    "bin",
     "lib",
     "cordis.patch.yml",
     "data",
     "CHANGELOG.md"
   ],
+  "bin": {
+    "traceproof": "./bin/traceproof"
+  },
   "engines": {
     "node": ">=22"
   },

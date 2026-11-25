@@ -1,12 +1,37 @@
 # dsh-prompt-polisher
 
-[![CI](https://github.com/yuluo554/dsh-prompt-polisher/actions/workflows/ci.yml/badge.svg)](https://github.com/yuluo554/dsh-prompt-polisher/actions/workflows/ci.yml)
+[![CI](https://github.com/yuluo554/traceproof/actions/workflows/ci.yml/badge.svg)](https://github.com/yuluo554/traceproof/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/dsh-prompt-polisher.svg)](https://www.npmjs.com/package/dsh-prompt-polisher)
-[![license](https://img.shields.io/npm/l/dsh-prompt-polisher.svg)](https://github.com/yuluo554/dsh-prompt-polisher/blob/main/LICENSE)
+[![license](https://img.shields.io/npm/l/dsh-prompt-polisher.svg)](https://github.com/yuluo554/traceproof/blob/main/LICENSE)
 
 DeepSeek Harness (dsh) 桌面端插件：在聊天输入框工具行加一枚「优化提示词」按钮，点击后把输入框里的草稿交给模型改写，优化结果回填输入框，随时可继续编辑、可一键还原。交互形态对标 WorkBuddy 内置的提示词优化，图标自绘、不复用。
 
-![优化提示词按钮与状态条](https://raw.githubusercontent.com/yuluo554/dsh-prompt-polisher/main/docs/preview.png)
+![优化提示词按钮与状态条](https://raw.githubusercontent.com/yuluo554/traceproof/main/docs/preview.png)
+
+---
+
+## traceproof（Stage 1 内核，与 dsh 插件并存）
+
+本仓正在收敛成 **traceproof**：取证账本引擎 —— 给定一组「主张」和一份会话痕迹，
+逐条判 `claim` / `refuted` / `inconclusive`；每条结论都必须落到**痕迹节点**
+（`session_id + turn + tool_call_id`），并且**证据在入账前就已脱敏**。
+
+内核骨架已就位（`src/traceproof/`），可执行入口只有一个 `bin/traceproof`。
+旧插件（host half + client half）在过渡期内原样保留，器官（verb）逐个迁入后再收敛。
+
+```console
+$ traceproof list
+（未注册任何器官）
+```
+
+契约（唯一入口 / 取证账本 / 脱敏前置 / 退出码）见 [`docs/traceproof.md`](docs/traceproof.md)。
+与其余三个产品共用 `SKELETON-SPEC`：账本 = **取证账本**
+（`claim` / `refuted` / `inconclusive`），`basis_ref` = 痕迹节点
+（`session_id` + `turn` + `tool_call_id`），退出码 `0/1/2/3`。
+
+| 器官（verb） | 来源仓 | 状态 |
+|---|---|---|
+| — | — | Stage 1 尚无器官迁入 |
 
 ## 特性
 
