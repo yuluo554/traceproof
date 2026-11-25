@@ -183,7 +183,7 @@ traceproof :: pipeline-run 0.2.2 :: pipeline-run.json
 | 1 | 旧仓**判定层**实跑用例数（D1 + D18） | 判定层 **14 文件** → `node --test <…>` → **86 passed / 0 failed**，rc 0（全部用例均为顶层 `test()`，无循环子测试） | 本器官测试 **148 passed**（`node --test test/pipeline-run.test.js`） | **过**（148 ≥ 86） |
 | 2 | README 示例命令 rc 相同 | 旧仓 README 无 CLI 示例（`/pipeline run` 是会话内命令，无进程 rc）；以源仓可执行示例 `node scripts/bench.js` → **rc 0**（`ALL GREEN`：B1 7/7 快照、B2 22/22 矩阵、B3 4/4、B4 6/6） | `traceproof check pipeline-run --input samples/pipeline-run.json --basis samples/pipeline-run-traces.json` → **rc 0**（claim 6 / blocking 0） | **过**（同为「全通过」；样例覆盖定义/编译/表单/预检/运行/节点六条主张） |
 | 3 | 用例数 / 函数数（口径乙） | **14** 文件 / **86** `test(` 调用 | **口径乙**：文件数按域计 → **1 文件**（容器数 ≠ 覆盖数）；函数数按条计 → **148** `test(` 调用；用例 **148** | **过**（用例 148 ≥ 86；函数 148 ≥ 86） |
-| 4 | `data/` 进包（`npm pack`） | 旧仓 `files` 只含 `lib/cordis.patch.yml/locale/data`；运行时无「器官 data」概念（locale 走文件读） | `%TEMP%` 副本（`E:\zcode_data\temp\tmp.qUkF8LS5h4`）构建后 `npm pack` → **148 条目 / 218189 B**；`package/lib/traceproof/verbs/pipeline-run/data/pipeline-run-defaults.json` **1585 B**；解包后 `list` 显示 `pipeline-run 0.2.2`、`check` rc 0 | **过**（器官静态数据随包发布；解包可运行） |
+| 4 | `data/` 进包（`npm pack`） | 旧仓 `files` 只含 `lib/cordis.patch.yml/locale/data`；运行时无「器官 data」概念（locale 走文件读） | `%TEMP%` 副本（宿主机临时目录）构建后 `npm pack` → **148 条目 / 218189 B**；`package/lib/traceproof/verbs/pipeline-run/data/pipeline-run-defaults.json` **1585 B**；解包后 `list` 显示 `pipeline-run 0.2.2`、`check` rc 0 | **过**（器官静态数据随包发布；解包可运行） |
 
 > 计数口径：新侧 `grep -c '^test(' test/pipeline-run.test.js` = **148**（只数顶层调用，不把文档注释里的
 > 字样算进函数数）。`node --test` 的 `ℹ tests 148` 与函数数一致（本文件没有循环子测试）。
