@@ -1,0 +1,339 @@
+{
+ "accessibility": {
+  "0": {
+   "linux": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "macos": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "windows": {
+    "evidence": [
+     "test_path_false",
+     "get_content_error",
+     "open_readable"
+    ],
+    "level": "WRITTEN_UNREADABLE",
+    "reasons": [
+     "reserved_device_name"
+    ]
+   }
+  },
+  "1": {
+   "linux": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "macos": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "windows": {
+    "evidence": [
+     "test_path_false",
+     "get_content_error",
+     "open_readable"
+    ],
+    "level": "WRITTEN_UNREADABLE",
+    "reasons": [
+     "reserved_device_name"
+    ]
+   }
+  },
+  "2": {
+   "linux": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "macos": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "windows": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   }
+  }
+ },
+ "collisions": [],
+ "container": {
+  "kind": "none"
+ },
+ "encoding": [
+  {
+   "bit11": false,
+   "candidates": [
+    {
+     "commonZone": true,
+     "encoding": "UTF-8",
+     "name": "CON.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP437",
+     "name": "CON.txt",
+     "strongStructure": false
+    },
+    {
+     "commonZone": true,
+     "encoding": "GBK",
+     "name": "CON.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP932",
+     "name": "CON.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP949",
+     "name": "CON.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP1251",
+     "name": "CON.txt",
+     "strongStructure": false
+    }
+   ],
+   "confidence": "medium",
+   "effectiveName": "CON.txt",
+   "entryIndex": 0,
+   "predictedNames": {
+    "7zip": {
+     "name": "CON.txt",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "info-zip-unzip": {
+     "name": "CON.txt",
+     "rule": "cp850_oem_transliterated",
+     "source": "cp850"
+    },
+    "libarchive": {
+     "name": "CON.txt",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "python-zipfile": {
+     "name": "CON.txt",
+     "rule": "cp437_fallback"
+    }
+   },
+   "preferred": "UTF-8",
+   "rawNameHex": "434f4e2e747874",
+   "upath": {
+    "crc_valid": null,
+    "name_crc32": null,
+    "present": false,
+    "utf8_name": null,
+    "version": null
+   }
+  },
+  {
+   "bit11": false,
+   "candidates": [
+    {
+     "commonZone": true,
+     "encoding": "UTF-8",
+     "name": "NUL.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP437",
+     "name": "NUL.txt",
+     "strongStructure": false
+    },
+    {
+     "commonZone": true,
+     "encoding": "GBK",
+     "name": "NUL.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP932",
+     "name": "NUL.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP949",
+     "name": "NUL.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP1251",
+     "name": "NUL.txt",
+     "strongStructure": false
+    }
+   ],
+   "confidence": "medium",
+   "effectiveName": "NUL.txt",
+   "entryIndex": 1,
+   "predictedNames": {
+    "7zip": {
+     "name": "NUL.txt",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "info-zip-unzip": {
+     "name": "NUL.txt",
+     "rule": "cp850_oem_transliterated",
+     "source": "cp850"
+    },
+    "libarchive": {
+     "name": "NUL.txt",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "python-zipfile": {
+     "name": "NUL.txt",
+     "rule": "cp437_fallback"
+    }
+   },
+   "preferred": "UTF-8",
+   "rawNameHex": "4e554c2e747874",
+   "upath": {
+    "crc_valid": null,
+    "name_crc32": null,
+    "present": false,
+    "utf8_name": null,
+    "version": null
+   }
+  },
+  {
+   "bit11": false,
+   "candidates": [
+    {
+     "commonZone": true,
+     "encoding": "UTF-8",
+     "name": "aux.tar.gz",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP437",
+     "name": "aux.tar.gz",
+     "strongStructure": false
+    },
+    {
+     "commonZone": true,
+     "encoding": "GBK",
+     "name": "aux.tar.gz",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP932",
+     "name": "aux.tar.gz",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP949",
+     "name": "aux.tar.gz",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP1251",
+     "name": "aux.tar.gz",
+     "strongStructure": false
+    }
+   ],
+   "confidence": "medium",
+   "effectiveName": "aux.tar.gz",
+   "entryIndex": 2,
+   "predictedNames": {
+    "7zip": {
+     "name": "aux.tar.gz",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "info-zip-unzip": {
+     "name": "aux.tar.gz",
+     "rule": "cp850_oem_transliterated",
+     "source": "cp850"
+    },
+    "libarchive": {
+     "name": "aux.tar.gz",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "python-zipfile": {
+     "name": "aux.tar.gz",
+     "rule": "cp437_fallback"
+    }
+   },
+   "preferred": "UTF-8",
+   "rawNameHex": "6175782e7461722e677a",
+   "upath": {
+    "crc_valid": null,
+    "name_crc32": null,
+    "present": false,
+    "utf8_name": null,
+    "version": null
+   }
+  }
+ ],
+ "findings": [],
+ "fixture": "reserved.zip",
+ "modules": [
+  "structure",
+  "encoding",
+  "fold",
+  "accessibility",
+  "container"
+ ],
+ "old_rc": 1,
+ "platforms": {
+  "ntfs_upcase": {
+   "entries": 65536,
+   "sha256": "41c26bc7a12bdaeb26025c93118697c7e3ef81ee048b00fe5cce2a472e0e0742",
+   "source": "host_probe"
+  },
+  "tables": {
+   "linux": {
+    "evidence_strength": "measured",
+    "source": "pathname(7)"
+   },
+   "macos": {
+    "evidence_strength": "medium",
+    "source": "libfsapfs + TN1150 + UAX #15"
+   }
+  }
+ },
+ "summary": {
+  "accessibility_count": 2,
+  "accessibility_levels": {
+   "BLOCKED": 0,
+   "OK": 7,
+   "WRITTEN_TRUNCATED": 0,
+   "WRITTEN_UNREADABLE": 2
+  },
+  "collision_count": 0,
+  "finding_count": 0,
+  "low_confidence_count": 0
+ },
+ "targets": [
+  "windows",
+  "macos",
+  "linux"
+ ]
+}

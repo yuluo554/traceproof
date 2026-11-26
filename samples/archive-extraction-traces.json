@@ -1,0 +1,11 @@
+{
+ "nodes": [
+  {
+   "quote": "shell: extract-oracle check data/fixtures/case.zip --target windows",
+   "session_id": "s-archive-1",
+   "tool_call_id": "call-archive-1",
+   "turn": 1
+  }
+ ],
+ "version": "trace-1"
+}

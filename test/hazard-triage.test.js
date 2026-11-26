@@ -1749,10 +1749,11 @@ test('claim: version is sourced from the old repository', () => {
   assert.equal(get('hazard-triage').version, '0.1.1')
 })
 
-test('claim: registry contains 9 builtin verbs in dictionary order', () => {
+test('claim: registry contains 10 builtin verbs in dictionary order', () => {
   assert.deepEqual([...BUILTIN_MODULES], [
     'agent-conflict',
     'anonymity-collapse',
+    'archive-extraction',
     'email-evidence',
     'hazard-triage',
     'pattern-evidence',

@@ -1,0 +1,274 @@
+{
+ "accessibility": {
+  "0": {
+   "linux": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "macos": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "windows": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   }
+  },
+  "1": {
+   "linux": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "macos": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "windows": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   }
+  }
+ },
+ "collisions": [
+  {
+   "cdOffsets": [
+    92,
+    148
+   ],
+   "code": "collision.CASEFOLD",
+   "evidence": {
+    "algorithm": "ntfs_upcase_table",
+    "compared": [
+     "Readme.txt",
+     "README.TXT"
+    ],
+    "folded": [
+     "README.TXT",
+     "README.TXT"
+    ],
+    "source": "ntfs_upcase_table",
+    "tableSha256": "41c26bc7a12bdaeb"
+   },
+   "evidenceStrength": "table_simulated",
+   "names": [
+    "Readme.txt",
+    "README.TXT"
+   ],
+   "onDiskNames": [
+    "Readme.txt",
+    "README.TXT"
+   ],
+   "platform": "windows",
+   "survivor": "README.TXT",
+   "survivorEntryIndex": 1,
+   "verdict": "overwritten",
+   "writeOrder": [
+    0,
+    1
+   ]
+  }
+ ],
+ "container": {
+  "kind": "none"
+ },
+ "encoding": [
+  {
+   "bit11": false,
+   "candidates": [
+    {
+     "commonZone": true,
+     "encoding": "UTF-8",
+     "name": "Readme.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP437",
+     "name": "Readme.txt",
+     "strongStructure": false
+    },
+    {
+     "commonZone": true,
+     "encoding": "GBK",
+     "name": "Readme.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP932",
+     "name": "Readme.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP949",
+     "name": "Readme.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP1251",
+     "name": "Readme.txt",
+     "strongStructure": false
+    }
+   ],
+   "confidence": "medium",
+   "effectiveName": "Readme.txt",
+   "entryIndex": 0,
+   "predictedNames": {
+    "7zip": {
+     "name": "Readme.txt",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "info-zip-unzip": {
+     "name": "Readme.txt",
+     "rule": "cp850_oem_transliterated",
+     "source": "cp850"
+    },
+    "libarchive": {
+     "name": "Readme.txt",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "python-zipfile": {
+     "name": "Readme.txt",
+     "rule": "cp437_fallback"
+    }
+   },
+   "preferred": "UTF-8",
+   "rawNameHex": "526561646d652e747874",
+   "upath": {
+    "crc_valid": null,
+    "name_crc32": null,
+    "present": false,
+    "utf8_name": null,
+    "version": null
+   }
+  },
+  {
+   "bit11": false,
+   "candidates": [
+    {
+     "commonZone": true,
+     "encoding": "UTF-8",
+     "name": "README.TXT",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP437",
+     "name": "README.TXT",
+     "strongStructure": false
+    },
+    {
+     "commonZone": true,
+     "encoding": "GBK",
+     "name": "README.TXT",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP932",
+     "name": "README.TXT",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP949",
+     "name": "README.TXT",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP1251",
+     "name": "README.TXT",
+     "strongStructure": false
+    }
+   ],
+   "confidence": "medium",
+   "effectiveName": "README.TXT",
+   "entryIndex": 1,
+   "predictedNames": {
+    "7zip": {
+     "name": "README.TXT",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "info-zip-unzip": {
+     "name": "README.TXT",
+     "rule": "cp850_oem_transliterated",
+     "source": "cp850"
+    },
+    "libarchive": {
+     "name": "README.TXT",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "python-zipfile": {
+     "name": "README.TXT",
+     "rule": "cp437_fallback"
+    }
+   },
+   "preferred": "UTF-8",
+   "rawNameHex": "524541444d452e545854",
+   "upath": {
+    "crc_valid": null,
+    "name_crc32": null,
+    "present": false,
+    "utf8_name": null,
+    "version": null
+   }
+  }
+ ],
+ "findings": [],
+ "fixture": "case.zip",
+ "modules": [
+  "structure",
+  "encoding",
+  "fold",
+  "accessibility",
+  "container"
+ ],
+ "old_rc": 1,
+ "platforms": {
+  "ntfs_upcase": {
+   "entries": 65536,
+   "sha256": "41c26bc7a12bdaeb26025c93118697c7e3ef81ee048b00fe5cce2a472e0e0742",
+   "source": "host_probe"
+  },
+  "tables": {
+   "linux": {
+    "evidence_strength": "measured",
+    "source": "pathname(7)"
+   },
+   "macos": {
+    "evidence_strength": "medium",
+    "source": "libfsapfs + TN1150 + UAX #15"
+   }
+  }
+ },
+ "summary": {
+  "accessibility_count": 0,
+  "accessibility_levels": {
+   "BLOCKED": 0,
+   "OK": 6,
+   "WRITTEN_TRUNCATED": 0,
+   "WRITTEN_UNREADABLE": 0
+  },
+  "collision_count": 1,
+  "finding_count": 0,
+  "low_confidence_count": 0
+ },
+ "targets": [
+  "windows",
+  "macos",
+  "linux"
+ ]
+}

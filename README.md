@@ -55,6 +55,7 @@ traceproof :: email-evidence 1.0.0 :: email-evidence-dmarc-b41.json
 |---|---|---|
 | `agent-conflict` | 迁自 target-map ④ 行 | 已迁入 `v0.0.4`；判据见 [`docs/agent-conflict.md`](docs/agent-conflict.md) |
 | `anonymity-collapse` | 迁自 target-map ④ 行 | 已迁入 `v0.1.1`；输入/规则/输出与 §7.3 四项判据见 [`docs/anonymity-collapse.md`](docs/anonymity-collapse.md) |
+| `archive-extraction` | 迁自 target-map ④ 行 | 已迁入 `v1.0.1`；输入/规则/输出与 §7.3 四项判据见 [`docs/archive-extraction.md`](docs/archive-extraction.md) |
 | `email-evidence` | 迁自 target-map ④ 行 | 已迁入 `v1.0.0`；输入/规则/输出与 §7.3 四项判据见 [`docs/email-evidence.md`](docs/email-evidence.md) |
 | `hazard-triage` | 迁自 target-map ④ 行 | 已迁入 `v0.1.1`；输入/规则/输出与 §7.3 四项判据见 [`docs/hazard-triage.md`](docs/hazard-triage.md) |
 | `pattern-evidence` | 迁自 target-map ④ 行 | 已迁入 `v0.2.0`；输入/规则/输出与 §7.3 四项判据见 [`docs/pattern-evidence.md`](docs/pattern-evidence.md) |

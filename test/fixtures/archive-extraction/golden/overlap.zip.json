@@ -1,0 +1,265 @@
+{
+ "accessibility": {
+  "0": {
+   "linux": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "macos": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "windows": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   }
+  },
+  "1": {
+   "linux": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "macos": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "windows": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   }
+  }
+ },
+ "collisions": [],
+ "container": {
+  "kind": "none"
+ },
+ "encoding": [
+  {
+   "bit11": false,
+   "candidates": [
+    {
+     "commonZone": true,
+     "encoding": "UTF-8",
+     "name": "a.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP437",
+     "name": "a.txt",
+     "strongStructure": false
+    },
+    {
+     "commonZone": true,
+     "encoding": "GBK",
+     "name": "a.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP932",
+     "name": "a.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP949",
+     "name": "a.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP1251",
+     "name": "a.txt",
+     "strongStructure": false
+    }
+   ],
+   "confidence": "medium",
+   "effectiveName": "a.txt",
+   "entryIndex": 0,
+   "predictedNames": {
+    "7zip": {
+     "name": "a.txt",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "info-zip-unzip": {
+     "name": "a.txt",
+     "rule": "cp850_oem_transliterated",
+     "source": "cp850"
+    },
+    "libarchive": {
+     "name": "a.txt",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "python-zipfile": {
+     "name": "a.txt",
+     "rule": "cp437_fallback"
+    }
+   },
+   "preferred": "UTF-8",
+   "rawNameHex": "612e747874",
+   "upath": {
+    "crc_valid": null,
+    "name_crc32": null,
+    "present": false,
+    "utf8_name": null,
+    "version": null
+   }
+  },
+  {
+   "bit11": false,
+   "candidates": [
+    {
+     "commonZone": true,
+     "encoding": "UTF-8",
+     "name": "b.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP437",
+     "name": "b.txt",
+     "strongStructure": false
+    },
+    {
+     "commonZone": true,
+     "encoding": "GBK",
+     "name": "b.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP932",
+     "name": "b.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP949",
+     "name": "b.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP1251",
+     "name": "b.txt",
+     "strongStructure": false
+    }
+   ],
+   "confidence": "medium",
+   "effectiveName": "b.txt",
+   "entryIndex": 1,
+   "predictedNames": {
+    "7zip": {
+     "name": "b.txt",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "info-zip-unzip": {
+     "name": "b.txt",
+     "rule": "cp850_oem_transliterated",
+     "source": "cp850"
+    },
+    "libarchive": {
+     "name": "b.txt",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "python-zipfile": {
+     "name": "b.txt",
+     "rule": "cp437_fallback"
+    }
+   },
+   "preferred": "UTF-8",
+   "rawNameHex": "622e747874",
+   "upath": {
+    "crc_valid": null,
+    "name_crc32": null,
+    "present": false,
+    "utf8_name": null,
+    "version": null
+   }
+  }
+ ],
+ "findings": [
+  {
+   "cdName": "b.txt",
+   "cdOffset": 131,
+   "entryIndex": 1,
+   "evidence": {
+    "first": {
+     "end": 80,
+     "entryIndex": 0,
+     "start": 0
+    },
+    "readers": {
+     "7zip": "extracted",
+     "info-zip-unzip": "extracted",
+     "libarchive": "extracted",
+     "python-zipfile": "refused"
+    },
+    "second": {
+     "end": 80,
+     "entryIndex": 1,
+     "start": 35
+    }
+   },
+   "lfhName": "b.txt",
+   "lfhOffset": 35,
+   "message": "两个本地文件头记录物理相交：一个工具拒绝、另一些照解",
+   "precedent": "structural_self_evidence",
+   "ruleId": "structure.LFH_OVERLAP"
+  }
+ ],
+ "fixture": "overlap.zip",
+ "modules": [
+  "structure",
+  "encoding",
+  "fold",
+  "accessibility",
+  "container"
+ ],
+ "old_rc": 1,
+ "platforms": {
+  "ntfs_upcase": {
+   "entries": 65536,
+   "sha256": "41c26bc7a12bdaeb26025c93118697c7e3ef81ee048b00fe5cce2a472e0e0742",
+   "source": "host_probe"
+  },
+  "tables": {
+   "linux": {
+    "evidence_strength": "measured",
+    "source": "pathname(7)"
+   },
+   "macos": {
+    "evidence_strength": "medium",
+    "source": "libfsapfs + TN1150 + UAX #15"
+   }
+  }
+ },
+ "summary": {
+  "accessibility_count": 0,
+  "accessibility_levels": {
+   "BLOCKED": 0,
+   "OK": 6,
+   "WRITTEN_TRUNCATED": 0,
+   "WRITTEN_UNREADABLE": 0
+  },
+  "collision_count": 0,
+  "finding_count": 1,
+  "low_confidence_count": 0
+ },
+ "targets": [
+  "windows",
+  "macos",
+  "linux"
+ ]
+}

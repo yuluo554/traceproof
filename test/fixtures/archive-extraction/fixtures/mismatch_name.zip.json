@@ -1,0 +1,39 @@
+{
+ "cd_actual_entries": 1,
+ "cd_span": [
+  51,
+  105
+ ],
+ "data_b64": "UEsDBBQAAAAAAAAAIQBZSnzsCgAAAAoAAAALAAAAYWxsb3dlZC50eHRQQVlMT0FELUEKUEsBAhQAFAAAAAAAAAAhAFlKfOwKAAAACgAAAAgAAAAAAAAAAAAAAAAAAAAAAGV2aWwudHh0UEsFBgAAAAABAAEANgAAADMAAAAAAA==",
+ "entries": [
+  {
+   "cd_crc": 3967568473,
+   "cd_csize": 10,
+   "cd_extra": [],
+   "cd_flags": 0,
+   "cd_name_hex": "6576696c2e747874",
+   "cd_offset": 51,
+   "cd_usize": 10,
+   "data_offset": 41,
+   "index": 0,
+   "lfh_crc": 3967568473,
+   "lfh_csize": 10,
+   "lfh_end": 51,
+   "lfh_extra": [],
+   "lfh_flags": 0,
+   "lfh_name_hex": "616c6c6f7765642e747874",
+   "lfh_offset": 0,
+   "lfh_usize": 10,
+   "method": 0
+  }
+ ],
+ "probe": {
+  "archive_size": 127,
+  "comment_length": 0,
+  "declared_cd_offset": 51,
+  "declared_cd_size": 54,
+  "declared_entries": 1,
+  "eocd_offset": 105
+ },
+ "zip64": false
+}

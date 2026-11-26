@@ -1,0 +1,152 @@
+{
+ "accessibility": {
+  "0": {
+   "linux": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "macos": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "windows": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   }
+  }
+ },
+ "collisions": [],
+ "container": {
+  "kind": "none"
+ },
+ "encoding": [
+  {
+   "bit11": false,
+   "candidates": [
+    {
+     "commonZone": false,
+     "encoding": "CP437",
+     "name": "╓╨╬─├√.txt",
+     "strongStructure": false
+    },
+    {
+     "commonZone": true,
+     "encoding": "GBK",
+     "name": "中文名.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP949",
+     "name": "櫓匡츰.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP1251",
+     "name": "ЦРОДГы.txt",
+     "strongStructure": false
+    }
+   ],
+   "confidence": "low",
+   "effectiveName": "中文名.txt",
+   "entryIndex": 0,
+   "predictedNames": {
+    "7zip": {
+     "name": "中文名.txt",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "info-zip-unzip": {
+     "name": "Íð+-+¹.txt",
+     "rule": "cp850_oem_transliterated",
+     "source": "cp850"
+    },
+    "libarchive": {
+     "name": "中文名.txt",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "python-zipfile": {
+     "name": "╓╨╬─├√.txt",
+     "rule": "cp437_fallback"
+    }
+   },
+   "preferred": "GBK",
+   "rawNameHex": "d6d0cec4c3fb2e747874",
+   "upath": {
+    "crc_valid": false,
+    "name_crc32": 100701231,
+    "present": true,
+    "utf8_name": "café.txt",
+    "version": 1
+   }
+  }
+ ],
+ "findings": [
+  {
+   "cdName": "\\xd6\\xd0\\xce\\xc4\\xc3\\xfb.txt",
+   "cdOffset": 70,
+   "entryIndex": 0,
+   "evidence": {
+    "downgradedTo": "low",
+    "expectedCrc32": 4194266064,
+    "fieldId": 28789,
+    "nameCrc32": 100701231,
+    "utf8Name": "café.txt",
+    "version": 1
+   },
+   "lfhName": "\\xd6\\xd0\\xce\\xc4\\xc3\\xfb.txt",
+   "lfhOffset": 0,
+   "message": "Unicode path extra field 的 NameCRC32 与条目原名字节不符：0x7075 的覆盖失效，按原名字节解释（不同工具会写出不同名字）",
+   "precedent": "apnote_d6_upath_crc",
+   "ruleId": "encoding.UPATH_CRC_MISMATCH"
+  }
+ ],
+ "fixture": "upath_badcrc.zip",
+ "modules": [
+  "structure",
+  "encoding",
+  "fold",
+  "accessibility",
+  "container"
+ ],
+ "old_rc": 1,
+ "platforms": {
+  "ntfs_upcase": {
+   "entries": 65536,
+   "sha256": "41c26bc7a12bdaeb26025c93118697c7e3ef81ee048b00fe5cce2a472e0e0742",
+   "source": "host_probe"
+  },
+  "tables": {
+   "linux": {
+    "evidence_strength": "measured",
+    "source": "pathname(7)"
+   },
+   "macos": {
+    "evidence_strength": "medium",
+    "source": "libfsapfs + TN1150 + UAX #15"
+   }
+  }
+ },
+ "summary": {
+  "accessibility_count": 0,
+  "accessibility_levels": {
+   "BLOCKED": 0,
+   "OK": 3,
+   "WRITTEN_TRUNCATED": 0,
+   "WRITTEN_UNREADABLE": 0
+  },
+  "collision_count": 0,
+  "finding_count": 1,
+  "low_confidence_count": 1
+ },
+ "targets": [
+  "windows",
+  "macos",
+  "linux"
+ ]
+}

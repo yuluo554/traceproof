@@ -1,0 +1,339 @@
+{
+ "accessibility": {
+  "0": {
+   "linux": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "macos": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "windows": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   }
+  },
+  "1": {
+   "linux": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "macos": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "windows": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   }
+  },
+  "2": {
+   "linux": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "macos": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "windows": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   }
+  }
+ },
+ "collisions": [],
+ "container": {
+  "kind": "epub"
+ },
+ "encoding": [
+  {
+   "bit11": true,
+   "candidates": [
+    {
+     "commonZone": true,
+     "encoding": "UTF-8",
+     "name": "mimetype",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP437",
+     "name": "mimetype",
+     "strongStructure": false
+    },
+    {
+     "commonZone": true,
+     "encoding": "GBK",
+     "name": "mimetype",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP932",
+     "name": "mimetype",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP949",
+     "name": "mimetype",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP1251",
+     "name": "mimetype",
+     "strongStructure": false
+    }
+   ],
+   "confidence": "high",
+   "effectiveName": "mimetype",
+   "entryIndex": 0,
+   "predictedNames": {
+    "7zip": {
+     "name": "mimetype",
+     "rule": "utf8_bit11"
+    },
+    "info-zip-unzip": {
+     "name": "mimetype",
+     "rule": "cp850_oem_transliterated",
+     "source": "cp850"
+    },
+    "libarchive": {
+     "name": "mimetype",
+     "rule": "utf8_bit11"
+    },
+    "python-zipfile": {
+     "name": "mimetype",
+     "rule": "utf8_bit11"
+    }
+   },
+   "preferred": "UTF-8",
+   "rawNameHex": "6d696d6574797065",
+   "upath": {
+    "crc_valid": null,
+    "name_crc32": null,
+    "present": false,
+    "utf8_name": null,
+    "version": null
+   }
+  },
+  {
+   "bit11": true,
+   "candidates": [
+    {
+     "commonZone": true,
+     "encoding": "UTF-8",
+     "name": "META-INF/container.xml",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP437",
+     "name": "META-INF/container.xml",
+     "strongStructure": false
+    },
+    {
+     "commonZone": true,
+     "encoding": "GBK",
+     "name": "META-INF/container.xml",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP932",
+     "name": "META-INF/container.xml",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP949",
+     "name": "META-INF/container.xml",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP1251",
+     "name": "META-INF/container.xml",
+     "strongStructure": false
+    }
+   ],
+   "confidence": "high",
+   "effectiveName": "META-INF/container.xml",
+   "entryIndex": 1,
+   "predictedNames": {
+    "7zip": {
+     "name": "META-INF/container.xml",
+     "rule": "utf8_bit11"
+    },
+    "info-zip-unzip": {
+     "name": "META-INF/container.xml",
+     "rule": "cp850_oem_transliterated",
+     "source": "cp850"
+    },
+    "libarchive": {
+     "name": "META-INF/container.xml",
+     "rule": "utf8_bit11"
+    },
+    "python-zipfile": {
+     "name": "META-INF/container.xml",
+     "rule": "utf8_bit11"
+    }
+   },
+   "preferred": "UTF-8",
+   "rawNameHex": "4d4554412d494e462f636f6e7461696e65722e786d6c",
+   "upath": {
+    "crc_valid": null,
+    "name_crc32": null,
+    "present": false,
+    "utf8_name": null,
+    "version": null
+   }
+  },
+  {
+   "bit11": true,
+   "candidates": [
+    {
+     "commonZone": true,
+     "encoding": "UTF-8",
+     "name": "OEBPS/content.xhtml",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP437",
+     "name": "OEBPS/content.xhtml",
+     "strongStructure": false
+    },
+    {
+     "commonZone": true,
+     "encoding": "GBK",
+     "name": "OEBPS/content.xhtml",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP932",
+     "name": "OEBPS/content.xhtml",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP949",
+     "name": "OEBPS/content.xhtml",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP1251",
+     "name": "OEBPS/content.xhtml",
+     "strongStructure": false
+    }
+   ],
+   "confidence": "high",
+   "effectiveName": "OEBPS/content.xhtml",
+   "entryIndex": 2,
+   "predictedNames": {
+    "7zip": {
+     "name": "OEBPS/content.xhtml",
+     "rule": "utf8_bit11"
+    },
+    "info-zip-unzip": {
+     "name": "OEBPS/content.xhtml",
+     "rule": "cp850_oem_transliterated",
+     "source": "cp850"
+    },
+    "libarchive": {
+     "name": "OEBPS/content.xhtml",
+     "rule": "utf8_bit11"
+    },
+    "python-zipfile": {
+     "name": "OEBPS/content.xhtml",
+     "rule": "utf8_bit11"
+    }
+   },
+   "preferred": "UTF-8",
+   "rawNameHex": "4f454250532f636f6e74656e742e7868746d6c",
+   "upath": {
+    "crc_valid": null,
+    "name_crc32": null,
+    "present": false,
+    "utf8_name": null,
+    "version": null
+   }
+  }
+ ],
+ "findings": [
+  {
+   "cdName": "mimetype",
+   "cdOffset": 242,
+   "entryIndex": 0,
+   "evidence": {
+    "contentLength": 21,
+    "evidence_strength": "measured",
+    "inferred": false,
+    "leadingBytes": 0,
+    "trailingBytes": 1
+   },
+   "lfhName": "mimetype",
+   "lfhOffset": 0,
+   "message": "mimetype 内容前后有空白/padding：容器约定要求内容恰为 media type 本身",
+   "precedent": "epub_ocf_zip_requirements",
+   "ruleId": "container.MIMETYPE_PADDING"
+  }
+ ],
+ "fixture": "padding.epub",
+ "modules": [
+  "structure",
+  "encoding",
+  "fold",
+  "accessibility",
+  "container"
+ ],
+ "old_rc": 1,
+ "platforms": {
+  "ntfs_upcase": {
+   "entries": 65536,
+   "sha256": "41c26bc7a12bdaeb26025c93118697c7e3ef81ee048b00fe5cce2a472e0e0742",
+   "source": "host_probe"
+  },
+  "tables": {
+   "linux": {
+    "evidence_strength": "measured",
+    "source": "pathname(7)"
+   },
+   "macos": {
+    "evidence_strength": "medium",
+    "source": "libfsapfs + TN1150 + UAX #15"
+   }
+  }
+ },
+ "summary": {
+  "accessibility_count": 0,
+  "accessibility_levels": {
+   "BLOCKED": 0,
+   "OK": 9,
+   "WRITTEN_TRUNCATED": 0,
+   "WRITTEN_UNREADABLE": 0
+  },
+  "collision_count": 0,
+  "finding_count": 1,
+  "low_confidence_count": 0
+ },
+ "targets": [
+  "windows",
+  "macos",
+  "linux"
+ ]
+}

@@ -1,0 +1,161 @@
+{
+ "accessibility": {
+  "0": {
+   "linux": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "macos": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "windows": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   }
+  }
+ },
+ "collisions": [],
+ "container": {
+  "kind": "none"
+ },
+ "encoding": [
+  {
+   "bit11": true,
+   "candidates": [
+    {
+     "commonZone": true,
+     "encoding": "UTF-8",
+     "name": "same.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP437",
+     "name": "same.txt",
+     "strongStructure": false
+    },
+    {
+     "commonZone": true,
+     "encoding": "GBK",
+     "name": "same.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP932",
+     "name": "same.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP949",
+     "name": "same.txt",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP1251",
+     "name": "same.txt",
+     "strongStructure": false
+    }
+   ],
+   "confidence": "high",
+   "effectiveName": "same.txt",
+   "entryIndex": 0,
+   "predictedNames": {
+    "7zip": {
+     "name": "same.txt",
+     "rule": "utf8_bit11"
+    },
+    "info-zip-unzip": {
+     "name": "same.txt",
+     "rule": "cp850_oem_transliterated",
+     "source": "cp850"
+    },
+    "libarchive": {
+     "name": "same.txt",
+     "rule": "utf8_bit11"
+    },
+    "python-zipfile": {
+     "name": "same.txt",
+     "rule": "utf8_bit11"
+    }
+   },
+   "preferred": "UTF-8",
+   "rawNameHex": "73616d652e747874",
+   "upath": {
+    "crc_valid": null,
+    "name_crc32": null,
+    "present": false,
+    "utf8_name": null,
+    "version": null
+   }
+  }
+ ],
+ "findings": [
+  {
+   "cdName": "same.txt",
+   "cdOffset": 48,
+   "entryIndex": 0,
+   "evidence": {
+    "cdFlags": 2048,
+    "differingBits": [
+     11
+    ],
+    "lfhFlags": 0
+   },
+   "lfhName": "same.txt",
+   "lfhOffset": 0,
+   "message": "本地头与中央目录的 general purpose flag 不同：同一份名字会按不同编码/加密语义解释",
+   "precedent": "unzip_reads_cd",
+   "ruleId": "structure.FLAG_DIVERGES"
+  }
+ ],
+ "fixture": "alias_lfh.zip",
+ "modules": [
+  "structure",
+  "encoding",
+  "fold",
+  "accessibility",
+  "container"
+ ],
+ "old_rc": 1,
+ "platforms": {
+  "ntfs_upcase": {
+   "entries": 65536,
+   "sha256": "41c26bc7a12bdaeb26025c93118697c7e3ef81ee048b00fe5cce2a472e0e0742",
+   "source": "host_probe"
+  },
+  "tables": {
+   "linux": {
+    "evidence_strength": "measured",
+    "source": "pathname(7)"
+   },
+   "macos": {
+    "evidence_strength": "medium",
+    "source": "libfsapfs + TN1150 + UAX #15"
+   }
+  }
+ },
+ "summary": {
+  "accessibility_count": 0,
+  "accessibility_levels": {
+   "BLOCKED": 0,
+   "OK": 3,
+   "WRITTEN_TRUNCATED": 0,
+   "WRITTEN_UNREADABLE": 0
+  },
+  "collision_count": 0,
+  "finding_count": 1,
+  "low_confidence_count": 0
+ },
+ "targets": [
+  "windows",
+  "macos",
+  "linux"
+ ]
+}

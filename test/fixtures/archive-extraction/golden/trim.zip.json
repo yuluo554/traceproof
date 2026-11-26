@@ -1,0 +1,273 @@
+{
+ "accessibility": {
+  "0": {
+   "linux": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "macos": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "windows": {
+    "evidence": [
+     "trailing_space_or_dot"
+    ],
+    "level": "WRITTEN_TRUNCATED",
+    "reasons": [
+     "trailing_space_or_dot"
+    ]
+   }
+  },
+  "1": {
+   "linux": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "macos": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "windows": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   }
+  }
+ },
+ "collisions": [
+  {
+   "cdOffsets": [
+    99,
+    152
+   ],
+   "code": "collision.TRIM",
+   "evidence": {
+    "chars": " .",
+    "source": "MS Learn naming conventions",
+    "trimmed": [
+     "readme",
+     "readme"
+    ]
+   },
+   "evidenceStrength": "measured",
+   "names": [
+    "readme.",
+    "readme"
+   ],
+   "onDiskNames": [
+    "readme",
+    "readme"
+   ],
+   "platform": "windows",
+   "survivor": "readme",
+   "survivorEntryIndex": 1,
+   "verdict": "overwritten",
+   "writeOrder": [
+    0,
+    1
+   ]
+  }
+ ],
+ "container": {
+  "kind": "none"
+ },
+ "encoding": [
+  {
+   "bit11": false,
+   "candidates": [
+    {
+     "commonZone": true,
+     "encoding": "UTF-8",
+     "name": "readme.",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP437",
+     "name": "readme.",
+     "strongStructure": false
+    },
+    {
+     "commonZone": true,
+     "encoding": "GBK",
+     "name": "readme.",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP932",
+     "name": "readme.",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP949",
+     "name": "readme.",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP1251",
+     "name": "readme.",
+     "strongStructure": false
+    }
+   ],
+   "confidence": "medium",
+   "effectiveName": "readme.",
+   "entryIndex": 0,
+   "predictedNames": {
+    "7zip": {
+     "name": "readme.",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "info-zip-unzip": {
+     "name": "readme.",
+     "rule": "cp850_oem_transliterated",
+     "source": "cp850"
+    },
+    "libarchive": {
+     "name": "readme.",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "python-zipfile": {
+     "name": "readme.",
+     "rule": "cp437_fallback"
+    }
+   },
+   "preferred": "UTF-8",
+   "rawNameHex": "726561646d652e",
+   "upath": {
+    "crc_valid": null,
+    "name_crc32": null,
+    "present": false,
+    "utf8_name": null,
+    "version": null
+   }
+  },
+  {
+   "bit11": false,
+   "candidates": [
+    {
+     "commonZone": true,
+     "encoding": "UTF-8",
+     "name": "readme",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP437",
+     "name": "readme",
+     "strongStructure": false
+    },
+    {
+     "commonZone": true,
+     "encoding": "GBK",
+     "name": "readme",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP932",
+     "name": "readme",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP949",
+     "name": "readme",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP1251",
+     "name": "readme",
+     "strongStructure": false
+    }
+   ],
+   "confidence": "medium",
+   "effectiveName": "readme",
+   "entryIndex": 1,
+   "predictedNames": {
+    "7zip": {
+     "name": "readme",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "info-zip-unzip": {
+     "name": "readme",
+     "rule": "cp850_oem_transliterated",
+     "source": "cp850"
+    },
+    "libarchive": {
+     "name": "readme",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "python-zipfile": {
+     "name": "readme",
+     "rule": "cp437_fallback"
+    }
+   },
+   "preferred": "UTF-8",
+   "rawNameHex": "726561646d65",
+   "upath": {
+    "crc_valid": null,
+    "name_crc32": null,
+    "present": false,
+    "utf8_name": null,
+    "version": null
+   }
+  }
+ ],
+ "findings": [],
+ "fixture": "trim.zip",
+ "modules": [
+  "structure",
+  "encoding",
+  "fold",
+  "accessibility",
+  "container"
+ ],
+ "old_rc": 1,
+ "platforms": {
+  "ntfs_upcase": {
+   "entries": 65536,
+   "sha256": "41c26bc7a12bdaeb26025c93118697c7e3ef81ee048b00fe5cce2a472e0e0742",
+   "source": "host_probe"
+  },
+  "tables": {
+   "linux": {
+    "evidence_strength": "measured",
+    "source": "pathname(7)"
+   },
+   "macos": {
+    "evidence_strength": "medium",
+    "source": "libfsapfs + TN1150 + UAX #15"
+   }
+  }
+ },
+ "summary": {
+  "accessibility_count": 1,
+  "accessibility_levels": {
+   "BLOCKED": 0,
+   "OK": 5,
+   "WRITTEN_TRUNCATED": 1,
+   "WRITTEN_UNREADABLE": 0
+  },
+  "collision_count": 1,
+  "finding_count": 0,
+  "low_confidence_count": 0
+ },
+ "targets": [
+  "windows",
+  "macos",
+  "linux"
+ ]
+}

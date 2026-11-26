@@ -1,0 +1,79 @@
+{
+ "cd_actual_entries": 3,
+ "cd_span": [
+  242,
+  429
+ ],
+ "data_b64": "UEsDBBQAAAgAAAAAIQA70fbvFQAAABUAAAAIAAAAbWltZXR5cGVhcHBsaWNhdGlvbi9lcHViK3ppcApQSwMEFAAACAAAAAAhAOvuHqowAAAAMAAAABYAAABNRVRBLUlORi9jb250YWluZXIueG1sPD94bWwgdmVyc2lvbj0iMS4wIj8+PGNvbnRhaW5lciB2ZXJzaW9uPSIxLjAiLz4KUEsDBBQAAAgAAAAAIQBc0JmMIgAAACIAAAATAAAAT0VCUFMvY29udGVudC54aHRtbDxodG1sPjxib2R5PlBBWUxPQUQ8L2JvZHk+PC9odG1sPgpQSwECFAAUAAAIAAAAACEAO9H27xUAAAAVAAAACAAAAAAAAAAAAAAAAAAAAAAAbWltZXR5cGVQSwECFAAUAAAIAAAAACEA6+4eqjAAAAAwAAAAFgAAAAAAAAAAAAAAAAA7AAAATUVUQS1JTkYvY29udGFpbmVyLnhtbFBLAQIUABQAAAgAAAAAIQBc0JmMIgAAACIAAAATAAAAAAAAAAAAAAAAAJ8AAABPRUJQUy9jb250ZW50LnhodG1sUEsFBgAAAAADAAMAuwAAAPIAAAAAAA==",
+ "entries": [
+  {
+   "cd_crc": 4025930043,
+   "cd_csize": 21,
+   "cd_extra": [],
+   "cd_flags": 2048,
+   "cd_name_hex": "6d696d6574797065",
+   "cd_offset": 242,
+   "cd_usize": 21,
+   "data_offset": 38,
+   "index": 0,
+   "lfh_crc": 4025930043,
+   "lfh_csize": 21,
+   "lfh_end": 59,
+   "lfh_extra": [],
+   "lfh_flags": 2048,
+   "lfh_name_hex": "6d696d6574797065",
+   "lfh_offset": 0,
+   "lfh_usize": 21,
+   "method": 0
+  },
+  {
+   "cd_crc": 2854153963,
+   "cd_csize": 48,
+   "cd_extra": [],
+   "cd_flags": 2048,
+   "cd_name_hex": "4d4554412d494e462f636f6e7461696e65722e786d6c",
+   "cd_offset": 296,
+   "cd_usize": 48,
+   "data_offset": 111,
+   "index": 1,
+   "lfh_crc": 2854153963,
+   "lfh_csize": 48,
+   "lfh_end": 159,
+   "lfh_extra": [],
+   "lfh_flags": 2048,
+   "lfh_name_hex": "4d4554412d494e462f636f6e7461696e65722e786d6c",
+   "lfh_offset": 59,
+   "lfh_usize": 48,
+   "method": 0
+  },
+  {
+   "cd_crc": 2358890588,
+   "cd_csize": 34,
+   "cd_extra": [],
+   "cd_flags": 2048,
+   "cd_name_hex": "4f454250532f636f6e74656e742e7868746d6c",
+   "cd_offset": 364,
+   "cd_usize": 34,
+   "data_offset": 208,
+   "index": 2,
+   "lfh_crc": 2358890588,
+   "lfh_csize": 34,
+   "lfh_end": 242,
+   "lfh_extra": [],
+   "lfh_flags": 2048,
+   "lfh_name_hex": "4f454250532f636f6e74656e742e7868746d6c",
+   "lfh_offset": 159,
+   "lfh_usize": 34,
+   "method": 0
+  }
+ ],
+ "probe": {
+  "archive_size": 451,
+  "comment_length": 0,
+  "declared_cd_offset": 242,
+  "declared_cd_size": 187,
+  "declared_entries": 3,
+  "eocd_offset": 429
+ },
+ "zip64": false
+}

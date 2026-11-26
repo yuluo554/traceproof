@@ -1,0 +1,11 @@
+{
+ "linux": {
+  "evidence_strength": "measured",
+  "source": "pathname(7)"
+ },
+ "macos": {
+  "evidence_strength": "medium",
+  "note": "实现观察，非 Apple 官方规范（plan/00 决策 ④）",
+  "source": "libfsapfs + TN1150 + UAX #15"
+ }
+}

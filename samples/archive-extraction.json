@@ -1,0 +1,187 @@
+{
+ "archive": {
+  "cd_actual_entries": 2,
+  "cd_span": [
+   92,
+   204
+  ],
+  "data_b64": "UEsDBBQAAAAAAAAAIQBtYZYABgAAAAYAAAAKAAAAUmVhZG1lLnR4dFVQUEVSClBLAwQUAAAAAAAAACEA1AooWwYAAAAGAAAACgAAAFJFQURNRS5UWFRMT1dFUgpQSwECFAAUAAAAAAAAACEAbWGWAAYAAAAGAAAACgAAAAAAAAAAAAAAAAAAAAAAUmVhZG1lLnR4dFBLAQIUABQAAAAAAAAAIQDUCihbBgAAAAYAAAAKAAAAAAAAAAAAAAAAAC4AAABSRUFETUUuVFhUUEsFBgAAAAACAAIAcAAAAFwAAAAAAA==",
+  "entries": [
+   {
+    "cd_crc": 9855341,
+    "cd_csize": 6,
+    "cd_extra": [],
+    "cd_flags": 0,
+    "cd_name_hex": "526561646d652e747874",
+    "cd_offset": 92,
+    "cd_usize": 6,
+    "data_offset": 40,
+    "index": 0,
+    "lfh_crc": 9855341,
+    "lfh_csize": 6,
+    "lfh_end": 46,
+    "lfh_extra": [],
+    "lfh_flags": 0,
+    "lfh_name_hex": "526561646d652e747874",
+    "lfh_offset": 0,
+    "lfh_usize": 6,
+    "method": 0
+   },
+   {
+    "cd_crc": 1529350868,
+    "cd_csize": 6,
+    "cd_extra": [],
+    "cd_flags": 0,
+    "cd_name_hex": "524541444d452e545854",
+    "cd_offset": 148,
+    "cd_usize": 6,
+    "data_offset": 86,
+    "index": 1,
+    "lfh_crc": 1529350868,
+    "lfh_csize": 6,
+    "lfh_end": 92,
+    "lfh_extra": [],
+    "lfh_flags": 0,
+    "lfh_name_hex": "524541444d452e545854",
+    "lfh_offset": 46,
+    "lfh_usize": 6,
+    "method": 0
+   }
+  ],
+  "probe": {
+   "archive_size": 226,
+   "comment_length": 0,
+   "declared_cd_offset": 92,
+   "declared_cd_size": 112,
+   "declared_entries": 2,
+   "eocd_offset": 204
+  },
+  "zip64": false
+ },
+ "claims": [
+  {
+   "asserted": true,
+   "check": "clean",
+   "claim_id": "c-clean",
+   "node": {
+    "session_id": "s-archive-1",
+    "tool_call_id": "call-archive-1",
+    "turn": 1
+   }
+  },
+  {
+   "asserted": true,
+   "check": "collision",
+   "claim_id": "c-casefold",
+   "code": "collision.CASEFOLD",
+   "entry_a": 0,
+   "entry_b": 1,
+   "node": {
+    "session_id": "s-archive-1",
+    "tool_call_id": "call-archive-1",
+    "turn": 1
+   },
+   "platform": "windows"
+  },
+  {
+   "asserted": "README.TXT",
+   "check": "collision_field",
+   "claim_id": "c-survivor",
+   "code": "collision.CASEFOLD",
+   "entry_a": 0,
+   "entry_b": 1,
+   "node": {
+    "session_id": "s-archive-1",
+    "tool_call_id": "call-archive-1",
+    "turn": 1
+   },
+   "path": "survivor",
+   "platform": "windows"
+  },
+  {
+   "asserted": "medium",
+   "check": "encoding",
+   "claim_id": "c-encoding",
+   "entry_index": 0,
+   "field": "confidence",
+   "node": {
+    "session_id": "s-archive-1",
+    "tool_call_id": "call-archive-1",
+    "turn": 1
+   }
+  },
+  {
+   "asserted": 0,
+   "check": "finding_count",
+   "claim_id": "c-structure",
+   "node": {
+    "session_id": "s-archive-1",
+    "tool_call_id": "call-archive-1",
+    "turn": 1
+   },
+   "rule": "structure.NAME_DIVERGES"
+  },
+  {
+   "asserted": "OK",
+   "check": "accessibility",
+   "claim_id": "c-access",
+   "entry_index": 0,
+   "evidence": [],
+   "node": {
+    "session_id": "s-archive-1",
+    "tool_call_id": "call-archive-1",
+    "turn": 1
+   },
+   "platform": "windows",
+   "reasons": []
+  },
+  {
+   "asserted": 2,
+   "check": "archive",
+   "claim_id": "c-archive",
+   "field": "entry_count",
+   "node": {
+    "session_id": "s-archive-1",
+    "tool_call_id": "call-archive-1",
+    "turn": 1
+   }
+  },
+  {
+   "asserted": "Readme.txt",
+   "check": "display",
+   "claim_id": "c-display",
+   "entry_index": 0,
+   "node": {
+    "session_id": "s-archive-1",
+    "tool_call_id": "call-archive-1",
+    "turn": 1
+   },
+   "side": "cd"
+  },
+  {
+   "asserted": 65536,
+   "check": "platforms",
+   "claim_id": "c-platforms",
+   "field": "ntfs_entries",
+   "node": {
+    "session_id": "s-archive-1",
+    "tool_call_id": "call-archive-1",
+    "turn": 1
+   }
+  },
+  {
+   "asserted": 1,
+   "check": "summary",
+   "claim_id": "c-summary",
+   "node": {
+    "session_id": "s-archive-1",
+    "tool_call_id": "call-archive-1",
+    "turn": 1
+   },
+   "of": "collisions"
+  }
+ ],
+ "targets": [
+  "windows"
+ ]
+}

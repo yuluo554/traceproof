@@ -1,0 +1,345 @@
+{
+ "accessibility": {
+  "0": {
+   "linux": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "macos": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "windows": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   }
+  },
+  "1": {
+   "linux": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "macos": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   },
+   "windows": {
+    "evidence": [],
+    "level": "OK",
+    "reasons": []
+   }
+  }
+ },
+ "collisions": [
+  {
+   "cdOffsets": [
+    90,
+    137
+   ],
+   "code": "collision.FILEDIR",
+   "evidence": {
+    "directoryEntryIndex": 1,
+    "fileEntryIndex": 0,
+    "readers": {
+     "7zip": "error",
+     "info-zip-unzip": "error",
+     "libarchive": "coerced_to_directory",
+     "python-zipfile": "error"
+    },
+    "reason": "同一路径既是文件又要求作目录",
+    "source": "structural_self_evidence"
+   },
+   "evidenceStrength": "measured",
+   "names": [
+    "a",
+    "a/b"
+   ],
+   "onDiskNames": [
+    "a",
+    "a/b"
+   ],
+   "platform": "linux",
+   "survivor": "a",
+   "survivorEntryIndex": 0,
+   "verdict": "skipped",
+   "writeOrder": [
+    0,
+    1
+   ]
+  },
+  {
+   "cdOffsets": [
+    90,
+    137
+   ],
+   "code": "collision.FILEDIR",
+   "evidence": {
+    "directoryEntryIndex": 1,
+    "fileEntryIndex": 0,
+    "readers": {
+     "7zip": "error",
+     "info-zip-unzip": "error",
+     "libarchive": "coerced_to_directory",
+     "python-zipfile": "error"
+    },
+    "reason": "同一路径既是文件又要求作目录",
+    "source": "structural_self_evidence"
+   },
+   "evidenceStrength": "measured",
+   "names": [
+    "a",
+    "a/b"
+   ],
+   "onDiskNames": [
+    "a",
+    "a/b"
+   ],
+   "platform": "macos",
+   "survivor": "a",
+   "survivorEntryIndex": 0,
+   "verdict": "skipped",
+   "writeOrder": [
+    0,
+    1
+   ]
+  },
+  {
+   "cdOffsets": [
+    90,
+    137
+   ],
+   "code": "collision.FILEDIR",
+   "evidence": {
+    "directoryEntryIndex": 1,
+    "fileEntryIndex": 0,
+    "readers": {
+     "7zip": "error",
+     "info-zip-unzip": "error",
+     "libarchive": "coerced_to_directory",
+     "python-zipfile": "error"
+    },
+    "reason": "同一路径既是文件又要求作目录",
+    "source": "structural_self_evidence"
+   },
+   "evidenceStrength": "measured",
+   "names": [
+    "a",
+    "a/b"
+   ],
+   "onDiskNames": [
+    "A",
+    "A/B"
+   ],
+   "platform": "windows",
+   "survivor": "a",
+   "survivorEntryIndex": 0,
+   "verdict": "skipped",
+   "writeOrder": [
+    0,
+    1
+   ]
+  }
+ ],
+ "container": {
+  "kind": "none"
+ },
+ "encoding": [
+  {
+   "bit11": false,
+   "candidates": [
+    {
+     "commonZone": true,
+     "encoding": "UTF-8",
+     "name": "a",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP437",
+     "name": "a",
+     "strongStructure": false
+    },
+    {
+     "commonZone": true,
+     "encoding": "GBK",
+     "name": "a",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP932",
+     "name": "a",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP949",
+     "name": "a",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP1251",
+     "name": "a",
+     "strongStructure": false
+    }
+   ],
+   "confidence": "medium",
+   "effectiveName": "a",
+   "entryIndex": 0,
+   "predictedNames": {
+    "7zip": {
+     "name": "a",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "info-zip-unzip": {
+     "name": "a",
+     "rule": "cp850_oem_transliterated",
+     "source": "cp850"
+    },
+    "libarchive": {
+     "name": "a",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "python-zipfile": {
+     "name": "a",
+     "rule": "cp437_fallback"
+    }
+   },
+   "preferred": "UTF-8",
+   "rawNameHex": "61",
+   "upath": {
+    "crc_valid": null,
+    "name_crc32": null,
+    "present": false,
+    "utf8_name": null,
+    "version": null
+   }
+  },
+  {
+   "bit11": false,
+   "candidates": [
+    {
+     "commonZone": true,
+     "encoding": "UTF-8",
+     "name": "a/b",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP437",
+     "name": "a/b",
+     "strongStructure": false
+    },
+    {
+     "commonZone": true,
+     "encoding": "GBK",
+     "name": "a/b",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP932",
+     "name": "a/b",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP949",
+     "name": "a/b",
+     "strongStructure": true
+    },
+    {
+     "commonZone": true,
+     "encoding": "CP1251",
+     "name": "a/b",
+     "strongStructure": false
+    }
+   ],
+   "confidence": "medium",
+   "effectiveName": "a/b",
+   "entryIndex": 1,
+   "predictedNames": {
+    "7zip": {
+     "name": "a/b",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "info-zip-unzip": {
+     "name": "a/b",
+     "rule": "cp850_oem_transliterated",
+     "source": "cp850"
+    },
+    "libarchive": {
+     "name": "a/b",
+     "rule": "ansi_codepage",
+     "source": "gbk"
+    },
+    "python-zipfile": {
+     "name": "a/b",
+     "rule": "cp437_fallback"
+    }
+   },
+   "preferred": "UTF-8",
+   "rawNameHex": "612f62",
+   "upath": {
+    "crc_valid": null,
+    "name_crc32": null,
+    "present": false,
+    "utf8_name": null,
+    "version": null
+   }
+  }
+ ],
+ "findings": [],
+ "fixture": "filedir.zip",
+ "modules": [
+  "structure",
+  "encoding",
+  "fold",
+  "accessibility",
+  "container"
+ ],
+ "old_rc": 1,
+ "platforms": {
+  "ntfs_upcase": {
+   "entries": 65536,
+   "sha256": "41c26bc7a12bdaeb26025c93118697c7e3ef81ee048b00fe5cce2a472e0e0742",
+   "source": "host_probe"
+  },
+  "tables": {
+   "linux": {
+    "evidence_strength": "measured",
+    "source": "pathname(7)"
+   },
+   "macos": {
+    "evidence_strength": "medium",
+    "source": "libfsapfs + TN1150 + UAX #15"
+   }
+  }
+ },
+ "summary": {
+  "accessibility_count": 0,
+  "accessibility_levels": {
+   "BLOCKED": 0,
+   "OK": 6,
+   "WRITTEN_TRUNCATED": 0,
+   "WRITTEN_UNREADABLE": 0
+  },
+  "collision_count": 3,
+  "finding_count": 0,
+  "low_confidence_count": 0
+ },
+ "targets": [
+  "windows",
+  "macos",
+  "linux"
+ ]
+}

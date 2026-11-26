@@ -1,0 +1,59 @@
+{
+ "cd_actual_entries": 2,
+ "cd_span": [
+  158,
+  280
+ ],
+ "data_b64": "UEsDBBQAAAgAAAAAIQDr7h6qMAAAADAAAAAWAAAATUVUQS1JTkYvY29udGFpbmVyLnhtbDw/eG1sIHZlcnNpb249IjEuMCI/Pjxjb250YWluZXIgdmVyc2lvbj0iMS4wIi8+ClBLAwQUAAAIAAAAACEAb2GrLBQAAAAUAAAACAAAAG1pbWV0eXBlYXBwbGljYXRpb24vZXB1Yit6aXBQSwECFAAUAAAIAAAAACEA6+4eqjAAAAAwAAAAFgAAAAAAAAAAAAAAAAAAAAAATUVUQS1JTkYvY29udGFpbmVyLnhtbFBLAQIUABQAAAgAAAAAIQBvYassFAAAABQAAAAIAAAAAAAAAAAAAAAAAGQAAABtaW1ldHlwZVBLBQYAAAAAAgACAHoAAACeAAAAAAA=",
+ "entries": [
+  {
+   "cd_crc": 2854153963,
+   "cd_csize": 48,
+   "cd_extra": [],
+   "cd_flags": 2048,
+   "cd_name_hex": "4d4554412d494e462f636f6e7461696e65722e786d6c",
+   "cd_offset": 158,
+   "cd_usize": 48,
+   "data_offset": 52,
+   "index": 0,
+   "lfh_crc": 2854153963,
+   "lfh_csize": 48,
+   "lfh_end": 100,
+   "lfh_extra": [],
+   "lfh_flags": 2048,
+   "lfh_name_hex": "4d4554412d494e462f636f6e7461696e65722e786d6c",
+   "lfh_offset": 0,
+   "lfh_usize": 48,
+   "method": 0
+  },
+  {
+   "cd_crc": 749429103,
+   "cd_csize": 20,
+   "cd_extra": [],
+   "cd_flags": 2048,
+   "cd_name_hex": "6d696d6574797065",
+   "cd_offset": 226,
+   "cd_usize": 20,
+   "data_offset": 138,
+   "index": 1,
+   "lfh_crc": 749429103,
+   "lfh_csize": 20,
+   "lfh_end": 158,
+   "lfh_extra": [],
+   "lfh_flags": 2048,
+   "lfh_name_hex": "6d696d6574797065",
+   "lfh_offset": 100,
+   "lfh_usize": 20,
+   "method": 0
+  }
+ ],
+ "probe": {
+  "archive_size": 302,
+  "comment_length": 0,
+  "declared_cd_offset": 158,
+  "declared_cd_size": 122,
+  "declared_entries": 2,
+  "eocd_offset": 280
+ },
+ "zip64": false
+}

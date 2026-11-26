@@ -2603,10 +2603,11 @@ test('verb: input_fields are the five required subject fields', () => {
   assert.deepEqual([...anonymityCollapseVerb.input_fields], ['table', 'declaration', 'policy', 'thresholds', 'claims'])
 })
 
-test('registry: BUILTIN_MODULES includes 9 verbs in dictionary order', () => {
+test('registry: BUILTIN_MODULES includes 10 verbs in dictionary order', () => {
   assert.deepEqual([...BUILTIN_MODULES], [
     'agent-conflict',
     'anonymity-collapse',
+    'archive-extraction',
     'email-evidence',
     'hazard-triage',
     'pattern-evidence',
@@ -2629,11 +2630,11 @@ test('cli: list shows anonymity-collapse with its version', async () => {
   assert.match(out, /anonymity-collapse\s+0\.1\.1/)
 })
 
-test('cli: list --json returns all nine verbs', async () => {
+test('cli: list --json returns all ten verbs', async () => {
   const { code, out } = await capture(() => main(['list', '--json']))
   assert.equal(code, EXIT_OK)
   const verbs = JSON.parse(out)
-  assert.equal(verbs.length, 9)
+  assert.equal(verbs.length, 10)
   assert.ok(verbs.some((verb) => verb.slug === 'anonymity-collapse' && verb.version === '0.1.1'))
 })
 

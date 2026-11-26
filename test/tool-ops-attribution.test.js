@@ -286,10 +286,11 @@ test('verb: input_fields are events and claims', () => {
   assert.deepEqual([...toolOpsAttributionVerb.input_fields], ['events', 'claims'])
 })
 
-test('verbs: BUILTIN_MODULES contains 9 verbs in dictionary order', () => {
+test('verbs: BUILTIN_MODULES contains 10 verbs in dictionary order', () => {
   assert.deepEqual([...BUILTIN_MODULES], [
     'agent-conflict',
     'anonymity-collapse',
+    'archive-extraction',
     'email-evidence',
     'hazard-triage',
     'pattern-evidence',
@@ -2033,11 +2034,11 @@ test('cli: list shows tool-ops-attribution at 0.2.0', async () => {
   assert.match(out, /tool-ops-attribution\s+0\.2\.0/)
 })
 
-test('cli: list --json returns nine verbs including the new one', async () => {
+test('cli: list --json returns ten verbs including the new one', async () => {
   const { code, out } = await capture(() => main(['list', '--json']))
   assert.equal(code, EXIT_OK)
   const verbs = JSON.parse(out)
-  assert.equal(verbs.length, 9)
+  assert.equal(verbs.length, 10)
   assert.ok(verbs.some((verb) => verb.slug === 'tool-ops-attribution' && verb.version === '0.2.0'))
 })
 

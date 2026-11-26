@@ -76,7 +76,7 @@ docs/<slug>.md                         # 输入 / 规则 / 输出示例
 | 依据模块叫 `core/trace-index.ts`（其余三产品叫 `basis`） | 本产品的依据是**痕迹索引**而非条文库；导出符号仍是 `Basis` / `NodeMissing` / `ref()`，契约面一致 |
 | 账本类型叫 `LedgerRecord` | TypeScript 里 `Record` 是内置工具类型，直接占用会污染类型面 |
 
-## 8. 示例（已迁入 `agent-conflict` / `email-evidence` / `pattern-evidence` / `pipeline-run` / `session-replay`）
+## 8. 示例（已迁入 `agent-conflict` / `archive-extraction` / `email-evidence` / `pattern-evidence` / `pipeline-run` / `session-replay`）
 
 ```console
 $ traceproof list

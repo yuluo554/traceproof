@@ -1,0 +1,59 @@
+{
+ "cd_actual_entries": 2,
+ "cd_span": [
+  80,
+  182
+ ],
+ "data_b64": "UEsDBBQAAAAAAAAAIQCXgW6ILQAAAC0AAAAFAAAAYS50eHRQSwMEFAAAAAAAAAAhAJoZUccKAAAACgAAAAUAAABiLnR4dFBBWUxPQUQtQgpQSwECFAAUAAAAAAAAACEAl4FuiC0AAAAtAAAABQAAAAAAAAAAAAAAAAAAAAAAYS50eHRQSwECFAAUAAAAAAAAACEAmhlRxwoAAAAKAAAABQAAAAAAAAAAAAAAAAAjAAAAYi50eHRQSwUGAAAAAAIAAgBmAAAAUAAAAAAA",
+ "entries": [
+  {
+   "cd_crc": 2288943511,
+   "cd_csize": 45,
+   "cd_extra": [],
+   "cd_flags": 0,
+   "cd_name_hex": "612e747874",
+   "cd_offset": 80,
+   "cd_usize": 45,
+   "data_offset": 35,
+   "index": 0,
+   "lfh_crc": 2288943511,
+   "lfh_csize": 45,
+   "lfh_end": 80,
+   "lfh_extra": [],
+   "lfh_flags": 0,
+   "lfh_name_hex": "612e747874",
+   "lfh_offset": 0,
+   "lfh_usize": 45,
+   "method": 0
+  },
+  {
+   "cd_crc": 3343980954,
+   "cd_csize": 10,
+   "cd_extra": [],
+   "cd_flags": 0,
+   "cd_name_hex": "622e747874",
+   "cd_offset": 131,
+   "cd_usize": 10,
+   "data_offset": 70,
+   "index": 1,
+   "lfh_crc": 3343980954,
+   "lfh_csize": 10,
+   "lfh_end": 80,
+   "lfh_extra": [],
+   "lfh_flags": 0,
+   "lfh_name_hex": "622e747874",
+   "lfh_offset": 35,
+   "lfh_usize": 10,
+   "method": 0
+  }
+ ],
+ "probe": {
+  "archive_size": 204,
+  "comment_length": 0,
+  "declared_cd_offset": 80,
+  "declared_cd_size": 102,
+  "declared_entries": 2,
+  "eocd_offset": 182
+ },
+ "zip64": false
+}
