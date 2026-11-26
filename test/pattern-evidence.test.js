@@ -1644,9 +1644,10 @@ test('claim 契约：每条记录 id 形如 claim@session#turn#call', () => {
 // 11. 接线 / CLI / 打包数据
 // ===========================================================================
 
-test('registry：BUILTIN_MODULES 含 6 个器官且字典序', () => {
+test('registry：BUILTIN_MODULES 含 7 个器官且字典序', () => {
   assert.deepEqual([...BUILTIN_MODULES], [
     'agent-conflict',
+    'anonymity-collapse',
     'email-evidence',
     'pattern-evidence',
     'pipeline-run',

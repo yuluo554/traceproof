@@ -1,0 +1,24 @@
+{
+  "version_source": "0.1.1",
+  "missing_tokens": ["", "NA", "N/A", "null", "NULL", "-"],
+  "policies": ["drop", "single-column", "separate-class"],
+  "roles": ["qi", "sensitive", "direct-identifier", "date-precision"],
+  "precisions": ["year", "month", "day"],
+  "attackers": ["prosecutor", "journalist", "marketer"],
+  "attacker_rules": {
+    "prosecutor": {"compare": "==", "threshold": 1},
+    "journalist": {"compare": "<=", "threshold": 2},
+    "marketer": {"compare": "<", "threshold": 3}
+  },
+  "null_token": "NULL",
+  "missing_class_key": "__MISSING__",
+  "undecided_row_reason": "missing_value_in_qi",
+  "reasons": {
+    "empty_table": "empty_table",
+    "no_participating_rows": "no_participating_rows",
+    "search_budget_truncated_require_exhaustive": "search_budget_truncated_require_exhaustive",
+    "search_not_exhausted": "search_not_exhausted",
+    "search_disabled": "search_disabled"
+  },
+  "disclosure": "崩塌边界集是同一份数据 + 同一声明 + 同一缺失策略下的可复算结果，不是该表的绝对隐私水平；非穷尽结果不得称为最小崩塌集。"
+}
