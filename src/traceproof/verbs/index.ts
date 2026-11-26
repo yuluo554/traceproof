@@ -3,7 +3,7 @@
  *
  * **显式清单，不做目录扫描**：扫描式加载会把「某个器官忘了登记」变成静默空跑，
  * 而显式清单在导入失败时立刻红。当前已迁入 `agent-conflict` / `email-evidence` /
- * `pattern-evidence` / `pipeline-run` / `session-replay`。
+ * `pattern-evidence` / `pipeline-run` / `rework-evidence` / `session-replay`。
  *
  * 新增器官三步（SKELETON-SPEC §1/§2）：
  *  1. 在 `src/traceproof/verbs/<slug>/index.ts` 里 `register({...})`；
@@ -17,6 +17,7 @@ export const BUILTIN_MODULES: readonly string[] = [
   'email-evidence',
   'pattern-evidence',
   'pipeline-run',
+  'rework-evidence',
   'session-replay',
 ]
 

@@ -57,6 +57,7 @@ traceproof :: email-evidence 1.0.0 :: email-evidence-dmarc-b41.json
 | `email-evidence` | 迁自 target-map ④ 行 | 已迁入 `v1.0.0`；输入/规则/输出与 §7.3 四项判据见 [`docs/email-evidence.md`](docs/email-evidence.md) |
 | `pattern-evidence` | 迁自 target-map ④ 行 | 已迁入 `v0.2.0`；输入/规则/输出与 §7.3 四项判据见 [`docs/pattern-evidence.md`](docs/pattern-evidence.md) |
 | `pipeline-run` | 迁自 target-map ④ 行 | 已迁入 `v0.2.2`；输入/规则/输出与 §7.3 四项判据见 [`docs/pipeline-run.md`](docs/pipeline-run.md) |
+| `rework-evidence` | 迁自 target-map ④ 行 | 已迁入 `v0.2.0`；输入/规则/输出与 §7.3 四项判据见 [`docs/rework-evidence.md`](docs/rework-evidence.md) |
 | `session-replay` | 迁自 target-map ④ 行 | 已迁入 `v0.1.1`；判据见 [`docs/session-replay.md`](docs/session-replay.md) |
 
 ## 特性

@@ -1,0 +1,23 @@
+{
+  "version": "2026.11.25",
+  "nodes": [
+    {
+      "session_id": "00000000-0000-4000-8000-000000000011",
+      "turn": 1,
+      "tool_call_id": "call-rework-1",
+      "quote": "Edit /demo/alpha/src/alpha_a.py"
+    },
+    {
+      "session_id": "00000000-0000-4000-8000-000000000011",
+      "turn": 2,
+      "tool_call_id": "call-rework-2",
+      "quote": "Read /demo/alpha/src/alpha_a.py"
+    },
+    {
+      "session_id": "00000000-0000-4000-8000-000000000011",
+      "turn": 3,
+      "tool_call_id": "call-rework-3",
+      "quote": "session record lines"
+    }
+  ]
+}

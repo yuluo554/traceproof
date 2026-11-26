@@ -1,0 +1,16 @@
+{
+  "thresholds": {
+    "rework_min_versions": 3,
+    "rework_min_edits": 3,
+    "dup_match_threshold": 0.9
+  },
+  "read_event_kinds": ["read"],
+  "write_event_kinds": ["edit", "multiedit", "write"],
+  "symbol_prefix_tokens": ["build", "create", "do", "fetch", "get", "handle", "make", "set", "try"],
+  "symbol_suffix_tokens": ["fn", "func", "helper", "impl", "util", "utils", "wrapper"],
+  "supported_symbol_languages": ["python"],
+  "symbol_language_by_suffix": {
+    ".py": "python"
+  },
+  "dup_disclosure": "粗匹配 ≠ 确认重复：以下为候选信号（符号名归一化/高相似度），需人工复核。"
+}
