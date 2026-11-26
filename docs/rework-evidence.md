@@ -121,7 +121,7 @@ traceproof :: rework-evidence 0.2.0 :: rework-evidence.json
 | # | 实测 | 结论 |
 |---:|---|---|
 | 1 | 旧仓判定层（D1 + D18 机械选 **10 文件**）实跑 **102 passed / 0 failed**（rc 0）；新器官 `node --test test/rework-evidence.test.js` **142 passed / 0 failed** | **过**（142 ≥ 102） |
-| 2 | 旧 README 示例 `arl scan --claude-home <tmp-claude> --codex-home <tmp-codex>` 对合成 rework-01 会话 rc **0**（`rework /demo/alpha/src/alpha_a.py：版本 3 / 编辑 3 / 跨度 1200s / 理由 versions>=N,edits>=M`）；新 `traceproof check rework-evidence --input samples/rework-evidence.json --basis samples/rework-evidence-traces.json` rc **0**（3 条 claim 全支持，`version_count=3 / edit_count=3 / span_seconds=1200`） | **过**（rc 0 = 0，逐值一致） |
+| 2 | 旧 README 示例 `arl scan --claude-home <tmp-claude> --codex-home <tmp-codex>` 对合成 rework-01 会话 rc **0**（`rework /demo/alpha/src/alpha_a.py：版本 3 / 编辑 3 / 跨度 1200s / 理由 versions>=N,edits>=M`）；新 `traceproof check rework-evidence --input samples/rework-evidence.json --basis samples/rework-evidence-traces.json` rc **0**（3 条 claim 全支持，`version_count=3 / edit_count=3 / span_seconds=1200`；`--json` 同参数 rc **0**、`summary.claim=3`） | **过**（rc 0 = 0，逐值一致） |
 | 3 | 口径乙：实跑用例 142 ≥ 102；`test(` 函数 **142** ≥ 旧层 AST **69**；文件数旧 **10** → 新 **1**（只记录） | **过** |
 | 4 | `%TEMP%` 副本 `npm run build` + `npm pack`：**174 条目 / 263757 B**；`package/lib/traceproof/verbs/rework-evidence/data/rework-defaults.json` **660 B**；解包后 `list` 显示 `rework-evidence 0.2.0`、`check` rc **0** | **过** |
 
