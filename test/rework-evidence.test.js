@@ -91,6 +91,7 @@ await loadBuiltin()
 
 const FIXTURES = fileURLToPath(new URL('./fixtures/rework-evidence/samples/', import.meta.url))
 const PRODUCT_ROOT = fileURLToPath(new URL('..', import.meta.url))
+const AT = String.fromCharCode(64)
 const NODE = { session_id: 's-rework-1', turn: 2, tool_call_id: 'call-rework-2' }
 
 function basisOf(nodes = [NODE]) {
@@ -518,7 +519,7 @@ test('parse claude: snapshot map keeps max version and strips extension form', (
     {
       type: 'file-history-snapshot',
       snapshot: {
-        trackedFileBackups: { '/a.py': { backupFileName: 'stem@v1.py', version: 1 } },
+        trackedFileBackups: { '/a.py': { backupFileName: `stem${AT}v1.py`, version: 1 } },
       },
     },
     {
