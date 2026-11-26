@@ -1798,8 +1798,14 @@ test('organ: node claim requires node_id', () => {
 // 7. 唯入口 / CLI
 // ===========================================================================
 
-test('registry: BUILTIN_MODULES includes pipeline-run in dictionary order', () => {
-  assert.deepEqual([...BUILTIN_MODULES], ['agent-conflict', 'email-evidence', 'pipeline-run', 'session-replay'])
+test('registry: BUILTIN_MODULES includes 5 verbs in dictionary order', () => {
+  assert.deepEqual([...BUILTIN_MODULES], [
+    'agent-conflict',
+    'email-evidence',
+    'pattern-evidence',
+    'pipeline-run',
+    'session-replay',
+  ])
   assert.deepEqual([...BUILTIN_MODULES], [...BUILTIN_MODULES].sort())
 })
 

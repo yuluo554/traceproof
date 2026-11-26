@@ -31,6 +31,7 @@ DeepSeek Harness (dsh) 桌面端插件：在聊天输入框工具行加一枚「
 $ traceproof list
 agent-conflict               0.0.4      多 agent 并行冲突取证：文件 / 区块 / 符号三级判据，逐条核对主张
 email-evidence               1.0.0      邮件认证取证：同一份 DNS 快照上重算 SPF/DKIM/DMARC，并逐条核对主张
+pattern-evidence             0.2.0      界面可疑模式取证：按规则包逐节点核对证据门禁与归属，逐条核对主张
 pipeline-run                 0.2.2      流水线运行取证：定义校验 / 确定性编译 / 运行事件折叠，逐条核对主张
 session-replay               0.1.1      会话回归取证：切 bug-fix episode、还原修复 diff，并逐条核对主张
 
@@ -54,6 +55,7 @@ traceproof :: email-evidence 1.0.0 :: email-evidence-dmarc-b41.json
 |---|---|---|
 | `agent-conflict` | 迁自 target-map ④ 行 | 已迁入 `v0.0.4`；判据见 [`docs/agent-conflict.md`](docs/agent-conflict.md) |
 | `email-evidence` | 迁自 target-map ④ 行 | 已迁入 `v1.0.0`；输入/规则/输出与 §7.3 四项判据见 [`docs/email-evidence.md`](docs/email-evidence.md) |
+| `pattern-evidence` | 迁自 target-map ④ 行 | 已迁入 `v0.2.0`；输入/规则/输出与 §7.3 四项判据见 [`docs/pattern-evidence.md`](docs/pattern-evidence.md) |
 | `pipeline-run` | 迁自 target-map ④ 行 | 已迁入 `v0.2.2`；输入/规则/输出与 §7.3 四项判据见 [`docs/pipeline-run.md`](docs/pipeline-run.md) |
 | `session-replay` | 迁自 target-map ④ 行 | 已迁入 `v0.1.1`；判据见 [`docs/session-replay.md`](docs/session-replay.md) |
 

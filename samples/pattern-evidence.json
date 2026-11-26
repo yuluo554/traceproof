@@ -1,0 +1,173 @@
+{
+  "page": {
+    "url": "https://example.invalid/checkout",
+    "scanned_at": "2026-10-18T00:00:00.000Z",
+    "elapsed_ms": 12,
+    "truncated": false,
+    "nodes": [
+      {
+        "seq": 1,
+        "kind": "control",
+        "tag": "input",
+        "text": "",
+        "label": "自动续订会员",
+        "attrs": {
+          "type": "checkbox",
+          "checked": "true"
+        },
+        "style": {},
+        "box": {
+          "widthPx": 16,
+          "heightPx": 16
+        },
+        "nearText": "结算页",
+        "path": "html:nth(0)>body:nth(0)>input:nth(0)"
+      },
+      {
+        "seq": 2,
+        "kind": "control",
+        "tag": "button",
+        "text": "",
+        "label": "关闭",
+        "attrs": {},
+        "style": {
+          "color": "#8a8a8a",
+          "backgroundColor": "#909090",
+          "display": "block",
+          "opacity": 1,
+          "fontSizePx": 14
+        },
+        "box": {
+          "widthPx": 6,
+          "heightPx": 6
+        },
+        "contrast": 1.2,
+        "nearText": "",
+        "path": "html:nth(0)>body:nth(0)>button:nth(0)"
+      },
+      {
+        "seq": 3,
+        "kind": "text",
+        "tag": "#text",
+        "text": "倒计时 09:59",
+        "label": "",
+        "attrs": {},
+        "style": {},
+        "box": {},
+        "nearText": "活动专区",
+        "path": "html:nth(0)>body:nth(0)>span:nth(0)"
+      },
+      {
+        "seq": 4,
+        "kind": "text",
+        "tag": "#text",
+        "text": "仅剩 2 件",
+        "label": "",
+        "attrs": {},
+        "style": {},
+        "box": {},
+        "nearText": "示例商城（虚构）",
+        "path": "html:nth(0)>body:nth(0)>span:nth(1)"
+      },
+      {
+        "seq": 5,
+        "kind": "control",
+        "tag": "button",
+        "text": "",
+        "label": "关闭",
+        "attrs": {},
+        "style": {
+          "color": "#8a8a8a",
+          "backgroundColor": "#909090",
+          "display": "block",
+          "opacity": 1,
+          "fontSizePx": 14
+        },
+        "box": {
+          "widthPx": 24,
+          "heightPx": 24
+        },
+        "contrast": 1.5,
+        "nearText": "",
+        "path": "html:nth(0)>body:nth(0)>button:nth(1)"
+      },
+      {
+        "seq": 6,
+        "kind": "text",
+        "tag": "#text",
+        "text": "服务费 ¥9.9",
+        "label": "",
+        "attrs": {},
+        "style": {},
+        "box": {},
+        "nearText": "结算页",
+        "path": "html:nth(0)>body:nth(0)>span:nth(2)"
+      }
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "c-rule-prechecked",
+      "check": "rule",
+      "asserted": "reported",
+      "rule_id": "dp-prechecked-optin",
+      "locator": "html:nth(0)>body:nth(0)>input:nth(0)",
+      "snippet": "自动续订会员",
+      "evidence": ["checked-state", "label-text"],
+      "finding_id": "F-01",
+      "node": { "session_id": "s-ui-1", "turn": 1, "tool_call_id": "call-ui-1" }
+    },
+    {
+      "claim_id": "c-rule-hidden-close",
+      "check": "rule",
+      "asserted": "reported",
+      "rule_id": "dp-hidden-close",
+      "locator": "html:nth(0)>body:nth(0)>button:nth(0)",
+      "evidence": ["box-size", "style-color", "style-background-color", "label-text"],
+      "finding_id": "F-02",
+      "node": { "session_id": "s-ui-1", "turn": 2, "tool_call_id": "call-ui-2" }
+    },
+    {
+      "claim_id": "c-count-findings",
+      "check": "count",
+      "asserted": "6",
+      "of": "findings",
+      "node": { "session_id": "s-ui-1", "turn": 3, "tool_call_id": "call-ui-3" }
+    },
+    {
+      "claim_id": "c-order-exact",
+      "check": "order",
+      "asserted": "exact",
+      "rule_ids": [
+        "dp-prechecked-optin",
+        "dp-hidden-close",
+        "dp-hidden-fee",
+        "dp-countdown-pressure",
+        "dp-fake-scarcity",
+        "dp-dark-close"
+      ],
+      "finding_ids": ["F-01", "F-02", "F-03", "F-04", "F-05", "F-06"],
+      "node": { "session_id": "s-ui-1", "turn": 4, "tool_call_id": "call-ui-4" }
+    },
+    {
+      "claim_id": "c-ruleset-valid",
+      "check": "ruleset",
+      "asserted": "valid",
+      "node": { "session_id": "s-ui-1", "turn": 5, "tool_call_id": "call-ui-5" }
+    },
+    {
+      "claim_id": "c-site-enabled",
+      "check": "site",
+      "asserted": "enabled",
+      "reason": "enabled",
+      "node": { "session_id": "s-ui-1", "turn": 6, "tool_call_id": "call-ui-6" }
+    },
+    {
+      "claim_id": "c-coverage-complete",
+      "check": "coverage",
+      "asserted": "complete",
+      "node_count": 6,
+      "node": { "session_id": "s-ui-1", "turn": 7, "tool_call_id": "call-ui-7" }
+    }
+  ]
+}
