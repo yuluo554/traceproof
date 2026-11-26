@@ -1644,7 +1644,7 @@ test('claim 契约：每条记录 id 形如 claim@session#turn#call', () => {
 // 11. 接线 / CLI / 打包数据
 // ===========================================================================
 
-test('registry：BUILTIN_MODULES 含 8 个器官且字典序', () => {
+test('registry：BUILTIN_MODULES 含 9 个器官且字典序', () => {
   assert.deepEqual([...BUILTIN_MODULES], [
     'agent-conflict',
     'anonymity-collapse',
@@ -1654,6 +1654,7 @@ test('registry：BUILTIN_MODULES 含 8 个器官且字典序', () => {
     'pipeline-run',
     'rework-evidence',
     'session-replay',
+    'tool-ops-attribution',
   ])
   assert.deepEqual([...BUILTIN_MODULES], [...BUILTIN_MODULES].sort())
 })

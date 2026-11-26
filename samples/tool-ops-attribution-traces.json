@@ -1,0 +1,29 @@
+{
+  "version": "2026.11.25",
+  "nodes": [
+    {
+      "session_id": "s-ops-1",
+      "turn": 1,
+      "tool_call_id": "call-ops-1",
+      "quote": "events count = 202"
+    },
+    {
+      "session_id": "s-ops-1",
+      "turn": 2,
+      "tool_call_id": "call-ops-2",
+      "quote": "F-REFUSE-1 ineffective（pending / 无真实样例）"
+    },
+    {
+      "session_id": "s-ops-1",
+      "turn": 3,
+      "tool_call_id": "call-ops-3",
+      "quote": "fake-high-fail failure_rate = 0.6"
+    },
+    {
+      "session_id": "s-ops-1",
+      "turn": 4,
+      "tool_call_id": "call-ops-4",
+      "quote": "fake-high-fail remove_candidate"
+    }
+  ]
+}

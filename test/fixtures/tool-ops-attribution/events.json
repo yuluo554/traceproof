@@ -1,0 +1,4388 @@
+{
+  "count": 202,
+  "coverage_note": "来源与覆盖声明：以上为本次实际扫描的日志文件与 schema 版本；未知版本或不可判别形态的日志不会被静默解析。",
+  "events": [
+    {
+      "call_id": "call_sess-claude-high_000",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 2,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T00:00:01.100Z",
+      "tokens": {
+        "cache_creation": 85,
+        "cache_read": 11280,
+        "input": 53386,
+        "output": 1045
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_001",
+      "duration_ms": null,
+      "error_text": "AttributeError: module 'sample_lib' has no attribute 'render'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 4,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T00:03:21.101Z",
+      "tokens": {
+        "cache_creation": 545,
+        "cache_read": 11326,
+        "input": 55639,
+        "output": 1396
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_002",
+      "duration_ms": null,
+      "error_text": "error: unexpected argument '-n' found",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 6,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T00:06:41.102Z",
+      "tokens": {
+        "cache_creation": 808,
+        "cache_read": 8400,
+        "input": 45536,
+        "output": 964
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_003",
+      "duration_ms": null,
+      "error_text": "SyntaxError: invalid syntax",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 8,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T00:10:01.103Z",
+      "tokens": {
+        "cache_creation": 1080,
+        "cache_read": 16214,
+        "input": 53500,
+        "output": 1651
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_004",
+      "duration_ms": null,
+      "error_text": "Exit code 143 Command timed out after 10m 0s",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 10,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T00:13:21.104Z",
+      "tokens": {
+        "cache_creation": 240,
+        "cache_read": 16448,
+        "input": 51192,
+        "output": 1053
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_005",
+      "duration_ms": null,
+      "error_text": "ETIMEDOUT: request to upstream timed out",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 12,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T00:16:41.105Z",
+      "tokens": {
+        "cache_creation": 76,
+        "cache_read": 10736,
+        "input": 58249,
+        "output": 984
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_006",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 14,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T00:20:01.106Z",
+      "tokens": {
+        "cache_creation": 1175,
+        "cache_read": 18660,
+        "input": 50418,
+        "output": 984
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_007",
+      "duration_ms": null,
+      "error_text": "AttributeError: module 'sample_lib' has no attribute 'render'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 16,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T00:23:21.107Z",
+      "tokens": {
+        "cache_creation": 808,
+        "cache_read": 13508,
+        "input": 45835,
+        "output": 1213
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_008",
+      "duration_ms": null,
+      "error_text": "Exit code 143 Command timed out after 10m 0s",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 18,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T00:26:41.108Z",
+      "tokens": {
+        "cache_creation": 731,
+        "cache_read": 20660,
+        "input": 51597,
+        "output": 871
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_009",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 20,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T00:30:01.109Z",
+      "tokens": {
+        "cache_creation": 23,
+        "cache_read": 23325,
+        "input": 56473,
+        "output": 1825
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_010",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 22,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T00:33:21.110Z",
+      "tokens": {
+        "cache_creation": 432,
+        "cache_read": 11800,
+        "input": 43589,
+        "output": 823
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_011",
+      "duration_ms": null,
+      "error_text": "error: unexpected argument '-n' found",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 24,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T00:36:41.111Z",
+      "tokens": {
+        "cache_creation": 1067,
+        "cache_read": 12458,
+        "input": 43947,
+        "output": 883
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_012",
+      "duration_ms": null,
+      "error_text": "SyntaxError: invalid syntax",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 26,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T00:40:01.112Z",
+      "tokens": {
+        "cache_creation": 341,
+        "cache_read": 8170,
+        "input": 52209,
+        "output": 1806
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_013",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 28,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T00:43:21.113Z",
+      "tokens": {
+        "cache_creation": 745,
+        "cache_read": 12319,
+        "input": 45482,
+        "output": 1508
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_014",
+      "duration_ms": null,
+      "error_text": "Exit code 143 Command timed out after 10m 0s",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 30,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T00:46:41.114Z",
+      "tokens": {
+        "cache_creation": 734,
+        "cache_read": 10994,
+        "input": 51795,
+        "output": 1247
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_015",
+      "duration_ms": null,
+      "error_text": "SyntaxError: invalid syntax",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 32,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T00:50:01.115Z",
+      "tokens": {
+        "cache_creation": 1008,
+        "cache_read": 11647,
+        "input": 49084,
+        "output": 1995
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_016",
+      "duration_ms": null,
+      "error_text": "AttributeError: module 'sample_lib' has no attribute 'render'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 34,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T00:53:21.116Z",
+      "tokens": {
+        "cache_creation": 333,
+        "cache_read": 17239,
+        "input": 48577,
+        "output": 1810
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_017",
+      "duration_ms": null,
+      "error_text": "ETIMEDOUT: request to upstream timed out",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 36,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T00:56:41.117Z",
+      "tokens": {
+        "cache_creation": 161,
+        "cache_read": 21916,
+        "input": 43912,
+        "output": 966
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_018",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 38,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T01:00:01.118Z",
+      "tokens": {
+        "cache_creation": 664,
+        "cache_read": 20849,
+        "input": 48800,
+        "output": 893
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_019",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 40,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T01:03:21.119Z",
+      "tokens": {
+        "cache_creation": 157,
+        "cache_read": 14072,
+        "input": 57521,
+        "output": 1083
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_020",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 42,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T01:06:41.120Z",
+      "tokens": {
+        "cache_creation": 841,
+        "cache_read": 22286,
+        "input": 58739,
+        "output": 1173
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_021",
+      "duration_ms": null,
+      "error_text": "ETIMEDOUT: request to upstream timed out",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 44,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T01:10:01.121Z",
+      "tokens": {
+        "cache_creation": 615,
+        "cache_read": 10769,
+        "input": 50360,
+        "output": 934
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_022",
+      "duration_ms": null,
+      "error_text": "Exit code 143 Command timed out after 10m 0s",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 46,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T01:13:21.122Z",
+      "tokens": {
+        "cache_creation": 320,
+        "cache_read": 21706,
+        "input": 41232,
+        "output": 1291
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_023",
+      "duration_ms": null,
+      "error_text": "ETIMEDOUT: request to upstream timed out",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 48,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T01:16:41.123Z",
+      "tokens": {
+        "cache_creation": 734,
+        "cache_read": 18801,
+        "input": 46827,
+        "output": 1085
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_024",
+      "duration_ms": null,
+      "error_text": "SyntaxError: invalid syntax",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 50,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T01:20:01.124Z",
+      "tokens": {
+        "cache_creation": 1182,
+        "cache_read": 20795,
+        "input": 52403,
+        "output": 1070
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_025",
+      "duration_ms": null,
+      "error_text": "AttributeError: module 'sample_lib' has no attribute 'render'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 52,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T01:23:21.125Z",
+      "tokens": {
+        "cache_creation": 886,
+        "cache_read": 17709,
+        "input": 51171,
+        "output": 1418
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_026",
+      "duration_ms": null,
+      "error_text": "Exit code 143 Command timed out after 10m 0s",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 54,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T01:26:41.126Z",
+      "tokens": {
+        "cache_creation": 672,
+        "cache_read": 21312,
+        "input": 48434,
+        "output": 2066
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_027",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 56,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T01:30:01.127Z",
+      "tokens": {
+        "cache_creation": 864,
+        "cache_read": 8407,
+        "input": 49942,
+        "output": 1838
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_028",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 58,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T01:33:21.128Z",
+      "tokens": {
+        "cache_creation": 517,
+        "cache_read": 22169,
+        "input": 41855,
+        "output": 962
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_029",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 60,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T01:36:41.129Z",
+      "tokens": {
+        "cache_creation": 614,
+        "cache_read": 16136,
+        "input": 49894,
+        "output": 2072
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_030",
+      "duration_ms": null,
+      "error_text": "SyntaxError: invalid syntax",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 62,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T01:40:01.130Z",
+      "tokens": {
+        "cache_creation": 416,
+        "cache_read": 22621,
+        "input": 58101,
+        "output": 1893
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_031",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 64,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T01:43:21.131Z",
+      "tokens": {
+        "cache_creation": 495,
+        "cache_read": 19235,
+        "input": 46543,
+        "output": 1103
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_032",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 66,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T01:46:41.132Z",
+      "tokens": {
+        "cache_creation": 1059,
+        "cache_read": 14256,
+        "input": 55075,
+        "output": 2144
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_033",
+      "duration_ms": null,
+      "error_text": "ETIMEDOUT: request to upstream timed out",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 68,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T01:50:01.133Z",
+      "tokens": {
+        "cache_creation": 1189,
+        "cache_read": 20654,
+        "input": 47372,
+        "output": 808
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_034",
+      "duration_ms": null,
+      "error_text": "AttributeError: module 'sample_lib' has no attribute 'render'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 70,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T01:53:21.134Z",
+      "tokens": {
+        "cache_creation": 1,
+        "cache_read": 12462,
+        "input": 53697,
+        "output": 1788
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_035",
+      "duration_ms": null,
+      "error_text": "ETIMEDOUT: request to upstream timed out",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 72,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T01:56:41.135Z",
+      "tokens": {
+        "cache_creation": 540,
+        "cache_read": 20079,
+        "input": 42912,
+        "output": 1043
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_036",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 74,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T02:00:01.136Z",
+      "tokens": {
+        "cache_creation": 339,
+        "cache_read": 12525,
+        "input": 42553,
+        "output": 1908
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_037",
+      "duration_ms": null,
+      "error_text": "ETIMEDOUT: request to upstream timed out",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 76,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T02:03:21.137Z",
+      "tokens": {
+        "cache_creation": 914,
+        "cache_read": 17184,
+        "input": 59189,
+        "output": 1230
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_038",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 78,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T02:06:41.138Z",
+      "tokens": {
+        "cache_creation": 1071,
+        "cache_read": 21781,
+        "input": 46708,
+        "output": 1534
+      },
+      "tool": "tool_exec",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-high_039",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 80,
+      "server": "fake-high-fail",
+      "session_id": "sess-claude-high",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T02:10:01.139Z",
+      "tokens": {
+        "cache_creation": 927,
+        "cache_read": 21045,
+        "input": 49190,
+        "output": 1460
+      },
+      "tool": "tool_fetch",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_000",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 164,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T04:26:43.100Z",
+      "tokens": {
+        "cache_creation": 775,
+        "cache_read": 231,
+        "input": 3119,
+        "output": 218
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_001",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 166,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T04:30:03.101Z",
+      "tokens": {
+        "cache_creation": 771,
+        "cache_read": 105,
+        "input": 2800,
+        "output": 211
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_002",
+      "duration_ms": null,
+      "error_text": "I cannot assist with that request.",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 168,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T04:33:23.102Z",
+      "tokens": {
+        "cache_creation": 816,
+        "cache_read": 206,
+        "input": 3983,
+        "output": 160
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_003",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 170,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T04:36:43.103Z",
+      "tokens": {
+        "cache_creation": 41,
+        "cache_read": 81,
+        "input": 2732,
+        "output": 173
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_004",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 172,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T04:40:03.104Z",
+      "tokens": {
+        "cache_creation": 437,
+        "cache_read": 124,
+        "input": 1980,
+        "output": 254
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_005",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 174,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T04:43:23.105Z",
+      "tokens": {
+        "cache_creation": 421,
+        "cache_read": 388,
+        "input": 2573,
+        "output": 106
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_006",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 176,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T04:46:43.106Z",
+      "tokens": {
+        "cache_creation": 86,
+        "cache_read": 112,
+        "input": 3481,
+        "output": 144
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_007",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 178,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T04:50:03.107Z",
+      "tokens": {
+        "cache_creation": 247,
+        "cache_read": 149,
+        "input": 2711,
+        "output": 144
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_008",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 180,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T04:53:23.108Z",
+      "tokens": {
+        "cache_creation": 373,
+        "cache_read": 159,
+        "input": 2649,
+        "output": 134
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_009",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 182,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T04:56:43.109Z",
+      "tokens": {
+        "cache_creation": 597,
+        "cache_read": 107,
+        "input": 2032,
+        "output": 61
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_010",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 184,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:00:03.110Z",
+      "tokens": {
+        "cache_creation": 115,
+        "cache_read": 276,
+        "input": 2481,
+        "output": 195
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_011",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 186,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:03:23.111Z",
+      "tokens": {
+        "cache_creation": 167,
+        "cache_read": 97,
+        "input": 2507,
+        "output": 194
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_012",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 188,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:06:43.112Z",
+      "tokens": {
+        "cache_creation": 679,
+        "cache_read": 350,
+        "input": 3774,
+        "output": 253
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_013",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 190,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:10:03.113Z",
+      "tokens": {
+        "cache_creation": 600,
+        "cache_read": 3,
+        "input": 3511,
+        "output": 153
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_014",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 192,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:13:23.114Z",
+      "tokens": {
+        "cache_creation": 326,
+        "cache_read": 220,
+        "input": 3966,
+        "output": 92
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_015",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 194,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:16:43.115Z",
+      "tokens": {
+        "cache_creation": 889,
+        "cache_read": 57,
+        "input": 3679,
+        "output": 62
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_016",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 196,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:20:03.116Z",
+      "tokens": {
+        "cache_creation": 684,
+        "cache_read": 120,
+        "input": 1790,
+        "output": 90
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_017",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 198,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:23:23.117Z",
+      "tokens": {
+        "cache_creation": 546,
+        "cache_read": 257,
+        "input": 1758,
+        "output": 248
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_018",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 200,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:26:43.118Z",
+      "tokens": {
+        "cache_creation": 50,
+        "cache_read": 151,
+        "input": 2827,
+        "output": 118
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_019",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 202,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:30:03.119Z",
+      "tokens": {
+        "cache_creation": 940,
+        "cache_read": 123,
+        "input": 3485,
+        "output": 117
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_020",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 204,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:33:23.120Z",
+      "tokens": {
+        "cache_creation": 558,
+        "cache_read": 34,
+        "input": 2066,
+        "output": 77
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_021",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 206,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:36:43.121Z",
+      "tokens": {
+        "cache_creation": 995,
+        "cache_read": 211,
+        "input": 1602,
+        "output": 223
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_022",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 208,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:40:03.122Z",
+      "tokens": {
+        "cache_creation": 361,
+        "cache_read": 143,
+        "input": 2055,
+        "output": 83
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-low_023",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 210,
+      "server": "fake-low-fail",
+      "session_id": "sess-claude-low",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:43:23.123Z",
+      "tokens": {
+        "cache_creation": 883,
+        "cache_read": 208,
+        "input": 1680,
+        "output": 91
+      },
+      "tool": "tool_scan",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_000",
+      "duration_ms": null,
+      "error_text": "Exit code 143 Command timed out after 10m 0s",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 83,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T02:13:22.100Z",
+      "tokens": {
+        "cache_creation": 1045,
+        "cache_read": 1581,
+        "input": 11154,
+        "output": 781
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_001",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 85,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T02:16:42.101Z",
+      "tokens": {
+        "cache_creation": 276,
+        "cache_read": 4170,
+        "input": 18828,
+        "output": 824
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_002",
+      "duration_ms": null,
+      "error_text": "Tool execution aborted before completion.",
+      "notes": [
+        "status_undeclared",
+        "stderr_nonempty",
+        "error_text_present_on_unknown"
+      ],
+      "seq": 87,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "unknown",
+      "timestamp": "2026-10-16T02:20:02.102Z",
+      "tokens": {
+        "cache_creation": 644,
+        "cache_read": 5107,
+        "input": 11940,
+        "output": 775
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_003",
+      "duration_ms": null,
+      "error_text": "no status declared",
+      "notes": [
+        "status_undeclared",
+        "error_text_present_on_unknown"
+      ],
+      "seq": 89,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "unknown",
+      "timestamp": "2026-10-16T02:23:22.103Z",
+      "tokens": {
+        "cache_creation": 490,
+        "cache_read": 4026,
+        "input": 12435,
+        "output": 328
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_004",
+      "duration_ms": null,
+      "error_text": "Tool execution aborted before completion.",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 91,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T02:26:42.104Z",
+      "tokens": {
+        "cache_creation": 1131,
+        "cache_read": 2126,
+        "input": 17553,
+        "output": 218
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_005",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 93,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T02:30:02.105Z",
+      "tokens": {
+        "cache_creation": 769,
+        "cache_read": 2991,
+        "input": 11817,
+        "output": 760
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_006",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 95,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T02:33:22.106Z",
+      "tokens": {
+        "cache_creation": 450,
+        "cache_read": 5069,
+        "input": 14747,
+        "output": 655
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_007",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 97,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T02:36:42.107Z",
+      "tokens": {
+        "cache_creation": 242,
+        "cache_read": 3672,
+        "input": 15920,
+        "output": 845
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_008",
+      "duration_ms": null,
+      "error_text": "PermissionError: [Errno 13] Permission denied: '<redacted-path>'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 99,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T02:40:02.108Z",
+      "tokens": {
+        "cache_creation": 575,
+        "cache_read": 3383,
+        "input": 18779,
+        "output": 358
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_009",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 101,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T02:43:22.109Z",
+      "tokens": {
+        "cache_creation": 1099,
+        "cache_read": 2879,
+        "input": 10027,
+        "output": 706
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_010",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 103,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T02:46:42.110Z",
+      "tokens": {
+        "cache_creation": 548,
+        "cache_read": 5115,
+        "input": 19326,
+        "output": 669
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_011",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 105,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T02:50:02.111Z",
+      "tokens": {
+        "cache_creation": 763,
+        "cache_read": 5234,
+        "input": 10839,
+        "output": 301
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_012",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 107,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T02:53:22.112Z",
+      "tokens": {
+        "cache_creation": 754,
+        "cache_read": 2940,
+        "input": 17245,
+        "output": 361
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_013",
+      "duration_ms": null,
+      "error_text": "listing failed with error: 0x80070005 Access is denied.",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 109,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T02:56:42.113Z",
+      "tokens": {
+        "cache_creation": 1069,
+        "cache_read": 1741,
+        "input": 8144,
+        "output": 462
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_014",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 111,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T03:00:02.114Z",
+      "tokens": {
+        "cache_creation": 949,
+        "cache_read": 3606,
+        "input": 14997,
+        "output": 482
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_015",
+      "duration_ms": null,
+      "error_text": "no status declared",
+      "notes": [
+        "status_undeclared",
+        "error_text_present_on_unknown"
+      ],
+      "seq": 113,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "unknown",
+      "timestamp": "2026-10-16T03:03:22.115Z",
+      "tokens": {
+        "cache_creation": 1055,
+        "cache_read": 1990,
+        "input": 11765,
+        "output": 841
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_016",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 115,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T03:06:42.116Z",
+      "tokens": {
+        "cache_creation": 743,
+        "cache_read": 4952,
+        "input": 11604,
+        "output": 609
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_017",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 117,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T03:10:02.117Z",
+      "tokens": {
+        "cache_creation": 464,
+        "cache_read": 5029,
+        "input": 19367,
+        "output": 317
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_018",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 119,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T03:13:22.118Z",
+      "tokens": {
+        "cache_creation": 637,
+        "cache_read": 5746,
+        "input": 15676,
+        "output": 473
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_019",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 121,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T03:16:42.119Z",
+      "tokens": {
+        "cache_creation": 745,
+        "cache_read": 3207,
+        "input": 10554,
+        "output": 566
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_020",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 123,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T03:20:02.120Z",
+      "tokens": {
+        "cache_creation": 181,
+        "cache_read": 5843,
+        "input": 18315,
+        "output": 765
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_021",
+      "duration_ms": null,
+      "error_text": "no status declared",
+      "notes": [
+        "status_undeclared",
+        "error_text_present_on_unknown"
+      ],
+      "seq": 125,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "unknown",
+      "timestamp": "2026-10-16T03:23:22.121Z",
+      "tokens": {
+        "cache_creation": 558,
+        "cache_read": 1024,
+        "input": 13648,
+        "output": 300
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_022",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 127,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T03:26:42.122Z",
+      "tokens": {
+        "cache_creation": 1099,
+        "cache_read": 2604,
+        "input": 10871,
+        "output": 753
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_023",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 129,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T03:30:02.123Z",
+      "tokens": {
+        "cache_creation": 255,
+        "cache_read": 1176,
+        "input": 10938,
+        "output": 488
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_024",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 131,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T03:33:22.124Z",
+      "tokens": {
+        "cache_creation": 150,
+        "cache_read": 1876,
+        "input": 11318,
+        "output": 892
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_025",
+      "duration_ms": null,
+      "error_text": "ETIMEDOUT: request to upstream timed out",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 133,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T03:36:42.125Z",
+      "tokens": {
+        "cache_creation": 279,
+        "cache_read": 1352,
+        "input": 8246,
+        "output": 269
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_026",
+      "duration_ms": null,
+      "error_text": "PermissionError: [Errno 13] Permission denied: '<redacted-path>'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 135,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T03:40:02.126Z",
+      "tokens": {
+        "cache_creation": 563,
+        "cache_read": 5437,
+        "input": 9109,
+        "output": 232
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_027",
+      "duration_ms": null,
+      "error_text": "listing failed with error: 0x80070005 Access is denied.",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 137,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T03:43:22.127Z",
+      "tokens": {
+        "cache_creation": 2,
+        "cache_read": 5263,
+        "input": 10327,
+        "output": 880
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_028",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 139,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T03:46:42.128Z",
+      "tokens": {
+        "cache_creation": 293,
+        "cache_read": 2628,
+        "input": 8348,
+        "output": 726
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_029",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 141,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T03:50:02.129Z",
+      "tokens": {
+        "cache_creation": 313,
+        "cache_read": 2515,
+        "input": 18600,
+        "output": 501
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_030",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 143,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T03:53:22.130Z",
+      "tokens": {
+        "cache_creation": 453,
+        "cache_read": 3943,
+        "input": 8717,
+        "output": 616
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_031",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 145,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T03:56:42.131Z",
+      "tokens": {
+        "cache_creation": 441,
+        "cache_read": 3108,
+        "input": 8507,
+        "output": 452
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_032",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 147,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T04:00:02.132Z",
+      "tokens": {
+        "cache_creation": 1091,
+        "cache_read": 5462,
+        "input": 18025,
+        "output": 242
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_033",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 149,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T04:03:22.133Z",
+      "tokens": {
+        "cache_creation": 1188,
+        "cache_read": 1588,
+        "input": 12600,
+        "output": 776
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_034",
+      "duration_ms": null,
+      "error_text": "Exit code 143 Command timed out after 10m 0s",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 151,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T04:06:42.134Z",
+      "tokens": {
+        "cache_creation": 700,
+        "cache_read": 5221,
+        "input": 19306,
+        "output": 787
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_035",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 153,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T04:10:02.135Z",
+      "tokens": {
+        "cache_creation": 115,
+        "cache_read": 4069,
+        "input": 15598,
+        "output": 289
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_036",
+      "duration_ms": null,
+      "error_text": "PermissionError: [Errno 13] Permission denied: '<redacted-path>'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 155,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T04:13:22.136Z",
+      "tokens": {
+        "cache_creation": 811,
+        "cache_read": 3491,
+        "input": 18767,
+        "output": 480
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_037",
+      "duration_ms": null,
+      "error_text": "listing failed with error: 0x80070005 Access is denied.",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 157,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T04:16:42.137Z",
+      "tokens": {
+        "cache_creation": 156,
+        "cache_read": 5521,
+        "input": 14802,
+        "output": 506
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_038",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 159,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T04:20:02.138Z",
+      "tokens": {
+        "cache_creation": 82,
+        "cache_read": 4602,
+        "input": 16179,
+        "output": 555
+      },
+      "tool": "tool_query",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-mid_039",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 161,
+      "server": "fake-mid-fail",
+      "session_id": "sess-claude-mid",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T04:23:22.139Z",
+      "tokens": {
+        "cache_creation": 921,
+        "cache_read": 5511,
+        "input": 13531,
+        "output": 418
+      },
+      "tool": "tool_index",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_000",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 315,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T06:54:56.100Z",
+      "tokens": {
+        "cache_creation": 656,
+        "cache_read": 3928,
+        "input": 11582,
+        "output": 676
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_001",
+      "duration_ms": null,
+      "error_text": "listing failed with error: 0x80070005 Access is denied.",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 317,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T06:58:16.101Z",
+      "tokens": {
+        "cache_creation": 956,
+        "cache_read": 5981,
+        "input": 10044,
+        "output": 333
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_002",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 319,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T07:01:36.102Z",
+      "tokens": {
+        "cache_creation": 368,
+        "cache_read": 4298,
+        "input": 17614,
+        "output": 323
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_003",
+      "duration_ms": null,
+      "error_text": "listing failed with error: 0x80070005 Access is denied.",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 321,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T07:04:56.103Z",
+      "tokens": {
+        "cache_creation": 735,
+        "cache_read": 3471,
+        "input": 13315,
+        "output": 219
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_004",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 323,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T07:08:16.104Z",
+      "tokens": {
+        "cache_creation": 996,
+        "cache_read": 1563,
+        "input": 16678,
+        "output": 539
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_005",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 325,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T07:11:36.105Z",
+      "tokens": {
+        "cache_creation": 425,
+        "cache_read": 3824,
+        "input": 13900,
+        "output": 204
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_006",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 327,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T07:14:56.106Z",
+      "tokens": {
+        "cache_creation": 809,
+        "cache_read": 3619,
+        "input": 8219,
+        "output": 486
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_007",
+      "duration_ms": null,
+      "error_text": "listing failed with error: 0x80070005 Access is denied.",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 329,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T07:18:16.107Z",
+      "tokens": {
+        "cache_creation": 967,
+        "cache_read": 1458,
+        "input": 14654,
+        "output": 251
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_008",
+      "duration_ms": null,
+      "error_text": "PermissionError: [Errno 13] Permission denied: '<redacted-path>'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 331,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T07:21:36.108Z",
+      "tokens": {
+        "cache_creation": 538,
+        "cache_read": 5277,
+        "input": 18842,
+        "output": 878
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_009",
+      "duration_ms": null,
+      "error_text": "listing failed with error: 0x80070005 Access is denied.",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 333,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T07:24:56.109Z",
+      "tokens": {
+        "cache_creation": 237,
+        "cache_read": 4482,
+        "input": 14794,
+        "output": 389
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_010",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 335,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T07:28:16.110Z",
+      "tokens": {
+        "cache_creation": 827,
+        "cache_read": 4076,
+        "input": 17862,
+        "output": 444
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_011",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 337,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T07:31:36.111Z",
+      "tokens": {
+        "cache_creation": 690,
+        "cache_read": 5292,
+        "input": 19267,
+        "output": 589
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_012",
+      "duration_ms": null,
+      "error_text": "PermissionError: [Errno 13] Permission denied: '<redacted-path>'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 339,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T07:34:56.112Z",
+      "tokens": {
+        "cache_creation": 557,
+        "cache_read": 4672,
+        "input": 18648,
+        "output": 720
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_013",
+      "duration_ms": null,
+      "error_text": "listing failed with error: 0x80070005 Access is denied.",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 341,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T07:38:16.113Z",
+      "tokens": {
+        "cache_creation": 107,
+        "cache_read": 4702,
+        "input": 10606,
+        "output": 645
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_014",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 343,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T07:41:36.114Z",
+      "tokens": {
+        "cache_creation": 994,
+        "cache_read": 5366,
+        "input": 9686,
+        "output": 340
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_015",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 345,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T07:44:56.115Z",
+      "tokens": {
+        "cache_creation": 737,
+        "cache_read": 5466,
+        "input": 17072,
+        "output": 861
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_016",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 347,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T07:48:16.116Z",
+      "tokens": {
+        "cache_creation": 345,
+        "cache_read": 2362,
+        "input": 19773,
+        "output": 267
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_017",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 349,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T07:51:36.117Z",
+      "tokens": {
+        "cache_creation": 111,
+        "cache_read": 2978,
+        "input": 12856,
+        "output": 862
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_018",
+      "duration_ms": null,
+      "error_text": "PermissionError: [Errno 13] Permission denied: '<redacted-path>'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 351,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T07:54:56.118Z",
+      "tokens": {
+        "cache_creation": 800,
+        "cache_read": 4517,
+        "input": 12277,
+        "output": 561
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_019",
+      "duration_ms": null,
+      "error_text": "listing failed with error: 0x80070005 Access is denied.",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 353,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T07:58:16.119Z",
+      "tokens": {
+        "cache_creation": 1011,
+        "cache_read": 1872,
+        "input": 14404,
+        "output": 353
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_020",
+      "duration_ms": null,
+      "error_text": "PermissionError: [Errno 13] Permission denied: '<redacted-path>'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 355,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T08:01:36.120Z",
+      "tokens": {
+        "cache_creation": 100,
+        "cache_read": 5801,
+        "input": 19966,
+        "output": 811
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_021",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 357,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T08:04:56.121Z",
+      "tokens": {
+        "cache_creation": 887,
+        "cache_read": 1366,
+        "input": 8080,
+        "output": 589
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_022",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 359,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T08:08:16.122Z",
+      "tokens": {
+        "cache_creation": 478,
+        "cache_read": 4158,
+        "input": 15430,
+        "output": 497
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_023",
+      "duration_ms": null,
+      "error_text": "listing failed with error: 0x80070005 Access is denied.",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 361,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T08:11:36.123Z",
+      "tokens": {
+        "cache_creation": 661,
+        "cache_read": 5942,
+        "input": 14574,
+        "output": 639
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_024",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 363,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T08:14:56.124Z",
+      "tokens": {
+        "cache_creation": 724,
+        "cache_read": 2795,
+        "input": 10705,
+        "output": 795
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_025",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 365,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T08:18:16.125Z",
+      "tokens": {
+        "cache_creation": 843,
+        "cache_read": 5223,
+        "input": 14990,
+        "output": 751
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_026",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 367,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T08:21:36.126Z",
+      "tokens": {
+        "cache_creation": 244,
+        "cache_read": 2283,
+        "input": 13707,
+        "output": 869
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_027",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 369,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T08:24:56.127Z",
+      "tokens": {
+        "cache_creation": 308,
+        "cache_read": 1505,
+        "input": 12854,
+        "output": 302
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_028",
+      "duration_ms": null,
+      "error_text": "PermissionError: [Errno 13] Permission denied: '<redacted-path>'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 371,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T08:28:16.128Z",
+      "tokens": {
+        "cache_creation": 450,
+        "cache_read": 3231,
+        "input": 16060,
+        "output": 285
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_029",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 373,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T08:31:36.129Z",
+      "tokens": {
+        "cache_creation": 883,
+        "cache_read": 1334,
+        "input": 8255,
+        "output": 298
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_030",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 375,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T08:34:56.130Z",
+      "tokens": {
+        "cache_creation": 392,
+        "cache_read": 1371,
+        "input": 12090,
+        "output": 718
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_031",
+      "duration_ms": null,
+      "error_text": "listing failed with error: 0x80070005 Access is denied.",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 377,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T08:38:16.131Z",
+      "tokens": {
+        "cache_creation": 1020,
+        "cache_read": 5738,
+        "input": 17920,
+        "output": 243
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_032",
+      "duration_ms": null,
+      "error_text": "PermissionError: [Errno 13] Permission denied: '<redacted-path>'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 379,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T08:41:36.132Z",
+      "tokens": {
+        "cache_creation": 948,
+        "cache_read": 2535,
+        "input": 18704,
+        "output": 568
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_033",
+      "duration_ms": null,
+      "error_text": "listing failed with error: 0x80070005 Access is denied.",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 381,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T08:44:56.133Z",
+      "tokens": {
+        "cache_creation": 778,
+        "cache_read": 4056,
+        "input": 10688,
+        "output": 659
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_034",
+      "duration_ms": null,
+      "error_text": "PermissionError: [Errno 13] Permission denied: '<redacted-path>'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 383,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T08:48:16.134Z",
+      "tokens": {
+        "cache_creation": 727,
+        "cache_read": 1382,
+        "input": 16331,
+        "output": 318
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_035",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 385,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T08:51:36.135Z",
+      "tokens": {
+        "cache_creation": 797,
+        "cache_read": 2405,
+        "input": 12690,
+        "output": 682
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_036",
+      "duration_ms": null,
+      "error_text": "PermissionError: [Errno 13] Permission denied: '<redacted-path>'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 387,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T08:54:56.136Z",
+      "tokens": {
+        "cache_creation": 499,
+        "cache_read": 1502,
+        "input": 12830,
+        "output": 551
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_037",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 389,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T08:58:16.137Z",
+      "tokens": {
+        "cache_creation": 868,
+        "cache_read": 3653,
+        "input": 18374,
+        "output": 280
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_038",
+      "duration_ms": null,
+      "error_text": "PermissionError: [Errno 13] Permission denied: '<redacted-path>'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 391,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T09:01:36.138Z",
+      "tokens": {
+        "cache_creation": 745,
+        "cache_read": 4929,
+        "input": 8053,
+        "output": 349
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-near_miss_039",
+      "duration_ms": null,
+      "error_text": "listing failed with error: 0x80070005 Access is denied.",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 393,
+      "server": "fake-near-miss",
+      "session_id": "sess-claude-near_miss",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T09:04:56.139Z",
+      "tokens": {
+        "cache_creation": 117,
+        "cache_read": 4644,
+        "input": 8147,
+        "output": 229
+      },
+      "tool": "tool_probe",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_000",
+      "duration_ms": null,
+      "error_text": "Exit code 143 Command timed out after 10m 0s",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 213,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T05:46:44.100Z",
+      "tokens": {
+        "cache_creation": 293,
+        "cache_read": 5213,
+        "input": 10981,
+        "output": 637
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_001",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 215,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:46:47.101Z",
+      "tokens": {
+        "cache_creation": 733,
+        "cache_read": 1872,
+        "input": 8154,
+        "output": 628
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_002",
+      "duration_ms": null,
+      "error_text": "Exit code 143 Command timed out after 10m 0s",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 217,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T05:46:50.102Z",
+      "tokens": {
+        "cache_creation": 171,
+        "cache_read": 1933,
+        "input": 17684,
+        "output": 549
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_003",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 219,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:46:53.103Z",
+      "tokens": {
+        "cache_creation": 717,
+        "cache_read": 2805,
+        "input": 17729,
+        "output": 302
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_004",
+      "duration_ms": null,
+      "error_text": "Exit code 143 Command timed out after 10m 0s",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 221,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T05:46:56.104Z",
+      "tokens": {
+        "cache_creation": 517,
+        "cache_read": 5724,
+        "input": 12488,
+        "output": 270
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_005",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 223,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:46:59.105Z",
+      "tokens": {
+        "cache_creation": 1002,
+        "cache_read": 5822,
+        "input": 11393,
+        "output": 573
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_006",
+      "duration_ms": null,
+      "error_text": "Exit code 143 Command timed out after 10m 0s",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 225,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T05:47:02.106Z",
+      "tokens": {
+        "cache_creation": 955,
+        "cache_read": 5084,
+        "input": 18586,
+        "output": 475
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_007",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 227,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:47:05.107Z",
+      "tokens": {
+        "cache_creation": 974,
+        "cache_read": 1220,
+        "input": 15267,
+        "output": 593
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_008",
+      "duration_ms": null,
+      "error_text": "Exit code 143 Command timed out after 10m 0s",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 229,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T05:47:08.108Z",
+      "tokens": {
+        "cache_creation": 866,
+        "cache_read": 1299,
+        "input": 12377,
+        "output": 644
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_009",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 231,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:47:11.109Z",
+      "tokens": {
+        "cache_creation": 383,
+        "cache_read": 2849,
+        "input": 10602,
+        "output": 226
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_010",
+      "duration_ms": null,
+      "error_text": "Exit code 143 Command timed out after 10m 0s",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 233,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T05:47:14.110Z",
+      "tokens": {
+        "cache_creation": 82,
+        "cache_read": 1952,
+        "input": 13974,
+        "output": 539
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_011",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 235,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:47:17.111Z",
+      "tokens": {
+        "cache_creation": 669,
+        "cache_read": 5944,
+        "input": 11463,
+        "output": 228
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_012",
+      "duration_ms": null,
+      "error_text": "Exit code 143 Command timed out after 10m 0s",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 237,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T05:47:20.112Z",
+      "tokens": {
+        "cache_creation": 260,
+        "cache_read": 2883,
+        "input": 18100,
+        "output": 403
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_013",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 239,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:47:23.113Z",
+      "tokens": {
+        "cache_creation": 1094,
+        "cache_read": 5761,
+        "input": 14529,
+        "output": 629
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_014",
+      "duration_ms": null,
+      "error_text": "Exit code 143 Command timed out after 10m 0s",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 241,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T05:47:26.114Z",
+      "tokens": {
+        "cache_creation": 60,
+        "cache_read": 3169,
+        "input": 9401,
+        "output": 735
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_015",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 243,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:47:29.115Z",
+      "tokens": {
+        "cache_creation": 871,
+        "cache_read": 1661,
+        "input": 14442,
+        "output": 450
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_016",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 245,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:47:32.116Z",
+      "tokens": {
+        "cache_creation": 1081,
+        "cache_read": 4397,
+        "input": 11757,
+        "output": 452
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_017",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 247,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:47:35.117Z",
+      "tokens": {
+        "cache_creation": 712,
+        "cache_read": 2761,
+        "input": 11813,
+        "output": 871
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_018",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 249,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:47:38.118Z",
+      "tokens": {
+        "cache_creation": 668,
+        "cache_read": 1835,
+        "input": 18501,
+        "output": 448
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_019",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 251,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:47:41.119Z",
+      "tokens": {
+        "cache_creation": 235,
+        "cache_read": 1023,
+        "input": 9828,
+        "output": 476
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_020",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 253,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:47:44.120Z",
+      "tokens": {
+        "cache_creation": 647,
+        "cache_read": 3626,
+        "input": 11079,
+        "output": 286
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_021",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 255,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:47:47.121Z",
+      "tokens": {
+        "cache_creation": 822,
+        "cache_read": 4734,
+        "input": 16857,
+        "output": 896
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_022",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 257,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:47:50.122Z",
+      "tokens": {
+        "cache_creation": 864,
+        "cache_read": 1868,
+        "input": 13254,
+        "output": 538
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_023",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 259,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:47:53.123Z",
+      "tokens": {
+        "cache_creation": 391,
+        "cache_read": 2935,
+        "input": 18180,
+        "output": 644
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_024",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 261,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:47:56.124Z",
+      "tokens": {
+        "cache_creation": 313,
+        "cache_read": 2289,
+        "input": 13509,
+        "output": 868
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_025",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 263,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:47:59.125Z",
+      "tokens": {
+        "cache_creation": 840,
+        "cache_read": 2016,
+        "input": 17216,
+        "output": 356
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_026",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 265,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:48:02.126Z",
+      "tokens": {
+        "cache_creation": 812,
+        "cache_read": 4903,
+        "input": 15471,
+        "output": 627
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_027",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 267,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:48:05.127Z",
+      "tokens": {
+        "cache_creation": 981,
+        "cache_read": 5338,
+        "input": 14620,
+        "output": 270
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_028",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 269,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:48:08.128Z",
+      "tokens": {
+        "cache_creation": 330,
+        "cache_read": 5537,
+        "input": 14279,
+        "output": 233
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-retry_029",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 271,
+      "server": "fake-retry",
+      "session_id": "sess-claude-retry",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:48:11.129Z",
+      "tokens": {
+        "cache_creation": 808,
+        "cache_read": 4524,
+        "input": 13227,
+        "output": 503
+      },
+      "tool": "tool_sync",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_000",
+      "duration_ms": null,
+      "error_text": "SyntaxError: invalid syntax",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 274,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T05:48:15.100Z",
+      "tokens": {
+        "cache_creation": 474,
+        "cache_read": 3329,
+        "input": 11310,
+        "output": 720
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_001",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 276,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:51:35.101Z",
+      "tokens": {
+        "cache_creation": 849,
+        "cache_read": 2931,
+        "input": 11382,
+        "output": 337
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_002",
+      "duration_ms": null,
+      "error_text": "error: unexpected argument '-n' found",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 278,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T05:54:55.102Z",
+      "tokens": {
+        "cache_creation": 971,
+        "cache_read": 4783,
+        "input": 13030,
+        "output": 716
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_003",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 280,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T05:58:15.103Z",
+      "tokens": {
+        "cache_creation": 472,
+        "cache_read": 3970,
+        "input": 15016,
+        "output": 889
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_004",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 282,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T06:01:35.104Z",
+      "tokens": {
+        "cache_creation": 1119,
+        "cache_read": 1023,
+        "input": 14147,
+        "output": 265
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_005",
+      "duration_ms": null,
+      "error_text": "error: unexpected argument '-n' found",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 284,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T06:04:55.105Z",
+      "tokens": {
+        "cache_creation": 906,
+        "cache_read": 3693,
+        "input": 15752,
+        "output": 787
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_006",
+      "duration_ms": null,
+      "error_text": "SyntaxError: invalid syntax",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 286,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T06:08:15.106Z",
+      "tokens": {
+        "cache_creation": 894,
+        "cache_read": 4402,
+        "input": 15830,
+        "output": 421
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_007",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 288,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T06:11:35.107Z",
+      "tokens": {
+        "cache_creation": 449,
+        "cache_read": 4201,
+        "input": 10809,
+        "output": 203
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_008",
+      "duration_ms": null,
+      "error_text": "error: unexpected argument '-n' found",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 290,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T06:14:55.108Z",
+      "tokens": {
+        "cache_creation": 1034,
+        "cache_read": 3608,
+        "input": 16999,
+        "output": 549
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_009",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 292,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T06:18:15.109Z",
+      "tokens": {
+        "cache_creation": 7,
+        "cache_read": 5243,
+        "input": 8407,
+        "output": 493
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_010",
+      "duration_ms": null,
+      "error_text": "AttributeError: module 'sample_lib' has no attribute 'render'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 294,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T06:21:35.110Z",
+      "tokens": {
+        "cache_creation": 870,
+        "cache_read": 1562,
+        "input": 10379,
+        "output": 459
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_011",
+      "duration_ms": null,
+      "error_text": "error: unexpected argument '-n' found",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 296,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T06:24:55.111Z",
+      "tokens": {
+        "cache_creation": 306,
+        "cache_read": 4225,
+        "input": 14356,
+        "output": 869
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_012",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 298,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T06:28:15.112Z",
+      "tokens": {
+        "cache_creation": 541,
+        "cache_read": 1277,
+        "input": 15283,
+        "output": 831
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_013",
+      "duration_ms": null,
+      "error_text": "AttributeError: module 'sample_lib' has no attribute 'render'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 300,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T06:31:35.113Z",
+      "tokens": {
+        "cache_creation": 466,
+        "cache_read": 1051,
+        "input": 13502,
+        "output": 399
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_014",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 302,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T06:34:55.114Z",
+      "tokens": {
+        "cache_creation": 409,
+        "cache_read": 4809,
+        "input": 16022,
+        "output": 678
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_015",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 304,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T06:38:15.115Z",
+      "tokens": {
+        "cache_creation": 55,
+        "cache_read": 2102,
+        "input": 19426,
+        "output": 550
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_016",
+      "duration_ms": null,
+      "error_text": "AttributeError: module 'sample_lib' has no attribute 'render'",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 306,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T06:41:35.116Z",
+      "tokens": {
+        "cache_creation": 537,
+        "cache_read": 5365,
+        "input": 10920,
+        "output": 695
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_017",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 308,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T06:44:55.117Z",
+      "tokens": {
+        "cache_creation": 1064,
+        "cache_read": 2988,
+        "input": 15992,
+        "output": 450
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_018",
+      "duration_ms": null,
+      "error_text": "SyntaxError: invalid syntax",
+      "notes": [
+        "stderr_nonempty"
+      ],
+      "seq": 310,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "error",
+      "timestamp": "2026-10-16T06:48:15.118Z",
+      "tokens": {
+        "cache_creation": 554,
+        "cache_read": 3538,
+        "input": 15877,
+        "output": 228
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_sess-claude-threshold_exact_019",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [],
+      "seq": 312,
+      "server": "fake-threshold-exact",
+      "session_id": "sess-claude-threshold_exact",
+      "source": "claude_code",
+      "source_version": "2.1.233",
+      "status": "ok",
+      "timestamp": "2026-10-16T06:51:35.119Z",
+      "tokens": {
+        "cache_creation": 847,
+        "cache_read": 1138,
+        "input": 9274,
+        "output": 589
+      },
+      "tool": "tool_check",
+      "turn_tokens_attributed": true
+    },
+    {
+      "call_id": "call_codex_000",
+      "duration_ms": 500,
+      "error_text": "",
+      "notes": [],
+      "seq": 3,
+      "server": "<codex>",
+      "session_id": "sess-codex-alpha",
+      "source": "codex",
+      "source_version": "0.146.0-alpha.3.1",
+      "status": "ok",
+      "timestamp": "2026-10-16T00:00:03.200Z",
+      "tokens": null,
+      "tool": "exec",
+      "turn_tokens_attributed": false
+    },
+    {
+      "call_id": "call_codex_001",
+      "duration_ms": 1200,
+      "error_text": "",
+      "notes": [],
+      "seq": 6,
+      "server": "<codex>",
+      "session_id": "sess-codex-alpha",
+      "source": "codex",
+      "source_version": "0.146.0-alpha.3.1",
+      "status": "ok",
+      "timestamp": "2026-10-16T00:00:08.200Z",
+      "tokens": null,
+      "tool": "shell_command",
+      "turn_tokens_attributed": false
+    },
+    {
+      "call_id": "call_codex_002",
+      "duration_ms": 400,
+      "error_text": "Script failed Exit code: 1 Wall time: 0.4 seconds Output: synthetic output line",
+      "notes": [],
+      "seq": 9,
+      "server": "<codex>",
+      "session_id": "sess-codex-alpha",
+      "source": "codex",
+      "source_version": "0.146.0-alpha.3.1",
+      "status": "error",
+      "timestamp": "2026-10-16T00:00:13.200Z",
+      "tokens": null,
+      "tool": "exec",
+      "turn_tokens_attributed": false
+    },
+    {
+      "call_id": "call_codex_003",
+      "duration_ms": 20100,
+      "error_text": "Script failed Exit code: 124 Wall time: 20.1 seconds Output: command timed out after 20054 milliseconds",
+      "notes": [],
+      "seq": 12,
+      "server": "<codex>",
+      "session_id": "sess-codex-alpha",
+      "source": "codex",
+      "source_version": "0.146.0-alpha.3.1",
+      "status": "error",
+      "timestamp": "2026-10-16T00:00:18.200Z",
+      "tokens": null,
+      "tool": "exec",
+      "turn_tokens_attributed": false
+    },
+    {
+      "call_id": "call_codex_004",
+      "duration_ms": 200,
+      "error_text": "",
+      "notes": [],
+      "seq": 15,
+      "server": "<codex>",
+      "session_id": "sess-codex-alpha",
+      "source": "codex",
+      "source_version": "0.146.0-alpha.3.1",
+      "status": "ok",
+      "timestamp": "2026-10-16T00:00:23.200Z",
+      "tokens": null,
+      "tool": "apply_patch",
+      "turn_tokens_attributed": false
+    },
+    {
+      "call_id": "call_codex_005",
+      "duration_ms": null,
+      "error_text": "",
+      "notes": [
+        "exit_code_undeclared",
+        "wall_time_missing"
+      ],
+      "seq": 18,
+      "server": "<codex>",
+      "session_id": "sess-codex-alpha",
+      "source": "codex",
+      "source_version": "0.146.0-alpha.3.1",
+      "status": "unknown",
+      "timestamp": "2026-10-16T00:00:28.200Z",
+      "tokens": null,
+      "tool": "view_image",
+      "turn_tokens_attributed": false
+    },
+    {
+      "call_id": "call_codex_006",
+      "duration_ms": 3000,
+      "error_text": "Script failed Exit code: 1 Wall time: 3.0 seconds Output: synthetic output line",
+      "notes": [],
+      "seq": 21,
+      "server": "<codex>",
+      "session_id": "sess-codex-alpha",
+      "source": "codex",
+      "source_version": "0.146.0-alpha.3.1",
+      "status": "error",
+      "timestamp": "2026-10-16T00:00:33.200Z",
+      "tokens": null,
+      "tool": "exec",
+      "turn_tokens_attributed": false
+    },
+    {
+      "call_id": "call_codex_007",
+      "duration_ms": 900,
+      "error_text": "",
+      "notes": [],
+      "seq": 24,
+      "server": "<codex>",
+      "session_id": "sess-codex-alpha",
+      "source": "codex",
+      "source_version": "0.146.0-alpha.3.1",
+      "status": "ok",
+      "timestamp": "2026-10-16T00:00:38.200Z",
+      "tokens": null,
+      "tool": "exec",
+      "turn_tokens_attributed": false
+    }
+  ],
+  "home": "data/synthetic",
+  "schema": "opslens.events/1",
+  "schema_versions": {
+    "claude_code": [
+      "2.1.233"
+    ],
+    "codex": [
+      "0.146.0-alpha.3.1"
+    ]
+  },
+  "sources": [
+    {
+      "kind": "claude_jsonl",
+      "relative": "logs/claude_alpha.jsonl"
+    },
+    {
+      "kind": "codex_rollout",
+      "relative": "logs/codex_alpha.jsonl"
+    }
+  ]
+}
